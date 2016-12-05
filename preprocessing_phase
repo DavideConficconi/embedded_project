@@ -1,0 +1,7 @@
+The openpiton project has a preprocessing phase where PyHP, a Verilog pre-processor, based on the configuration on the system the user need, produce from a .pyv.v or pyv.h the right .tmp.v or .tmp.h files.
+In order to do that we had create PITON_ROOT, an enviroment variable, that point to the root of the OpenPiton package, i.e. "/PATH/TO/openpiton".
+Since we need to execute the preprocessing phase we exclude VCS, a Synopsis tool, from the simulation of the system: we comment line 647 of the script "sims,1.262".
+Then we apply the "make" command in the $PITON_ROOT/piton7tools/src/configsrc.
+Next step: "source piton_settings.bash" in order to execute that script and use the enviroment variable in our shell.
+Final step launch sims: "sims -sys=manycore -x_tiles=1 -y_tiles=1 -vcs_build"
+This step outputs Verilog files generated from PyHP
