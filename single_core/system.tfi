@@ -1,0 +1,43 @@
+
+
+
+// Instantiate the module
+system instance_name (
+    .chip_io_slew(chip_io_slew), 
+    .chip_io_impsel(chip_io_impsel), 
+    .chipset_clk(chipset_clk), 
+    .sys_rst_n(sys_rst_n), 
+    .pll_rst_n(pll_rst_n), 
+    .clk_en(clk_en), 
+    .pll_bypass(pll_bypass), 
+    .pll_rangea(pll_rangea), 
+    .pll_lock(pll_lock), 
+    .clk_mux_sel(clk_mux_sel), 
+    .jtag_clk(jtag_clk), 
+    .jtag_rst_l(jtag_rst_l), 
+    .jtag_modesel(jtag_modesel), 
+    .jtag_datain(jtag_datain), 
+    .jtag_dataout(jtag_dataout), 
+    .async_mux(async_mux), 
+    .chipset_mem_val(chipset_mem_val), 
+    .chipset_mem_data(chipset_mem_data), 
+    .chipset_mem_rdy(chipset_mem_rdy), 
+    .mem_chipset_val(mem_chipset_val), 
+    .mem_chipset_data(mem_chipset_data), 
+    .mem_chipset_rdy(mem_chipset_rdy), 
+    .chipset_fake_iob_val(chipset_fake_iob_val), 
+    .chipset_fake_iob_data(chipset_fake_iob_data), 
+    .chipset_fake_iob_rdy(chipset_fake_iob_rdy), 
+    .fake_iob_chipset_val(fake_iob_chipset_val), 
+    .fake_iob_chipset_data(fake_iob_chipset_data), 
+    .fake_iob_chipset_rdy(fake_iob_chipset_rdy), 
+    .chipset_io_val(chipset_io_val), 
+    .chipset_io_data(chipset_io_data), 
+    .chipset_io_rdy(chipset_io_rdy), 
+    .io_chipset_val(io_chipset_val), 
+    .io_chipset_data(io_chipset_data), 
+    .io_chipset_rdy(io_chipset_rdy), 
+    .leds(leds)
+    );
+
+

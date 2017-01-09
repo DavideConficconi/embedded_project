@@ -1,0 +1,986 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/dave/embedded_project/embedded_project/single_core/cmp_top_isim_beh.exe -prj /home/dave/embedded_project/embedded_project/single_core/cmp_top_beh.prj work.cmp_top work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/swrvr_clib.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_esl_stsm.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_esl_shiftreg.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_esl_rtsm.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_esl_lfsr.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_esl_htsm.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_esl_counter.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_irf_register.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/swrvr_dlib.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_esl_fsm.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_rndrob.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_ecl_cnt6.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_eclcomp7.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_aluspr.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_aluor32.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_aluadder64.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_in2_gt_in1_3to1.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_in2_gt_in1_3b.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_in2_gt_in1_2b.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_denorm_3to1.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_denorm_3b.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_cnt_lead0_lvl4.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_cnt_lead0_lvl3.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_cnt_lead0_lvl2.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_cnt_lead0_lvl1.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_irf_register8.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_irf_register16.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/u1.beh.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_rrobin_picker.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_prencoder16.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_addern_32.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l1i_tag.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l1i_data.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l1d_tag.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l1d_data.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_1rw_128x78.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_tlu_zcmp64.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_tlu_penc64.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_tlu_dec64.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_thrfsm.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_thrcmpl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_swpla.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_rndrob.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_par34.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_par32.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_par16.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_milfsm.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_lru4.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_lfsr5.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_incr46.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_esl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_ctr5.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_cmp35.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ffu_part_add32.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ffu_ctl_visctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_rml_inc3.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_rml_cwp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_reg.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_ecl_wb.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_ecl_mdqctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_ecl_eccctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_ecl_divcntl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_eclccr.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_eclbyplog_rs1.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_eclbyplog.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_ecc_dec.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_div_yreg.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_div_32eql.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_byp_eccgen.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_alu_16eql.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_aluzcmp64.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_alulogic.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_aluaddsub.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/mul64.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/m1.beh.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_rrobin_picker2.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_pcx_qmon.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_dc_parity_gen.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_dcache_lfsr.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_asi_decode.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_in2_gt_in1_frac.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_denorm_frac.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_cnt_lead0_64b.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_cnt_lead0_53b.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_irf.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_tdp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_tcl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_pib.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_mmu_dp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_mmu_ctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_misctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_incr64.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_hyperv.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l1i_val.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l1d_val.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_tlu_intdp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_tlu_intctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_mul_dp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_mul_cntl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_wseldp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_swl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_sscan.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_invctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_imd.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_ifqdp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_ifqctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_fdp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_fcl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_errdp.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_errctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_dec.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_dcl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ffu_vis.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ffu_dp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ffu_ctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_shft.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_rml.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_ecl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_ecc.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_div.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_byp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_alu.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/one_of_five.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_tlbdp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_tagdp.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_stb_rwdp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_stb_rwctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_stb_ctldp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_stb_ctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_qdp2.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_qdp1.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_qctl2.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_qctl1.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_excpctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_dctldp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_dctl.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_dcdp.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15_priority_encoder.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_rptr_min_global.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_rptr_macros.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_out_dp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_out_ctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_mul_frac_dp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_mul_exp_dp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_mul_ctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_in_dp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_in_ctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_div_frac_dp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_div_exp_dp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_div_ctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_add_frac_dp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_add_exp_dp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_add_ctl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_input_route_request_calc.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_scm.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_rf32x80.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_rf32x152b.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_rf16x160.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_itlb.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_irf_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_ict.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_icd.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_frf.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_dtlb.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_dct.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_dcd.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/test_stub_scan.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l2_tag.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l2_state.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l2_dir.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l2_data.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_mul_top.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ffu.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/space_avail_top.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/network_input_blk_multi_out.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_priority_encoder.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_data_pgen.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_data_ecc.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15_home_encoder.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15_hmc.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_rptr_groups.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_out.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_mul.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_in.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_div.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_add.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/flat_id_to_xy.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_output_datapath.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_output_control.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_input_control.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/ucb_bus_out.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/ucb_bus_in.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_nospu_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l15_tag.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l15_hmt.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l15_data.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_mul_top_nospu_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_nospu_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ffu_nospu_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/simplenocbuffer.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/rf_l15_wmt.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/rf_l15_mesi.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/rf_l15_lruarray.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/pcx_decoder.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/pcx_buffer.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/one_of_eight.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/noc3encoder.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/noc3buffer.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/noc2decoder.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/noc1encoder.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/noc1buffer.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/net_dff.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_nospu_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_tag.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_state.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_smc.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe2_dpath.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe2_ctrl.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe2_buf_in.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe1_dpath.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe1_ctrl.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe1_buf_out.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe1_buf_in.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_mshr_decoder.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_mshr.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_encoder.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_dir.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_decoder.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_data.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_broadcast_counter.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15_pipeline.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15_mshr.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15_csm.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15_cpxencoder.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_buf.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/flip_bus.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_output_top.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_input_top_4.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_input_top_16.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/cpx_spc_rpt.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/cpx_spc_buf.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/cfg_asi.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bus_compare_equal.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sync_fifo.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/synchronizer.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/rtap_ucb_transmitter.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/rtap_ucb_receiver.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_tag_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_state_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_smc_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe2.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe1.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_mshr_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_dir_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_data_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_config_regs.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_broadcast_counter_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/jtag_interface_tap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_arb.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpga_net_chooser_32.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_node_top.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/async_fifo.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/valrdy_to_credit.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_core.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/rtap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/mem_io_splitter.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/jtag_ucb_transmitter.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/jtag_ucb_receiver.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/jtag_interface.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/jtag_ctap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_arb_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpga_bridge_send_32.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpga_bridge_rcv_32.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_node_top_wrap.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dmbr.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/credit_to_valrdy.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/cpx_arbitrator.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/config_regs.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/clk_gating_latch.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/chip_bridge_send_32.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/chip_bridge_rcv_32.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tile.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/OCI.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/jtag.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpga_bridge.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/chip_bridge.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/chipset_impl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_mon.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/thrfsm_mon.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/stb_ovfl_mon.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/softint_mon.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/pc_muxsel_mon.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/pc_cmp.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/nukeint_mon.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/nc_inv_chk.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/mask_mon.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l_cache_mon.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/icache_mutex_mon.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/exu_mon.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/chipset.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/chip.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tso_mon.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/system.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_pipe_flow.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sas_tasks.tmp.v" into library work
+WARNING:HDLCompiler:1419 - "/home/dave/embedded_project/embedded_project/single_core/sas_tasks.tmp.v" Line 893: Case statement with no case item violates IEEE 1800 syntax
+WARNING:HDLCompiler:1419 - "/home/dave/embedded_project/embedded_project/single_core/sas_tasks.tmp.v" Line 912: Case statement with no case item violates IEEE 1800 syntax
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sas_intf.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/monitor.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/manycore_network_mon.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_mon.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/jtag_mon.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/iosplitter_axi_lite_updated.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/iob_mon.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fake_mem_ctrl.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dmbr_mon.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/cmp_l15_messages_mon.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/ciop_iob.tmp.v" into library work
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/manycore_top.tmp.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "/home/dave/embedded_project/embedded_project/single_core/system.v" Line 433: Port oram_on is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/dave/embedded_project/embedded_project/single_core/system.v" Line 641: Port chipset_prsnt_n is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/dave/embedded_project/embedded_project/single_core/l2_pipe2.v" Line 271: Port recycled is not connected to this instance
+WARNING:HDLCompiler:1007 - "/home/dave/embedded_project/embedded_project/single_core/sas_intf.v" Line 4581: Element index 31 into active_thread is out of bounds
+Completed static elaboration
+Fuse Memory Usage: 145760 KB
+Fuse CPU Usage: 2770 ms
+Compiling module OCI
+Compiling module synchronizer
+Compiling module bridge_network_chooser
+Compiling module async_fifo(ASIZE=4,MEMSIZE=8)
+Compiling module sync_fifo(ASIZE=4,MEMSIZE=8)
+Compiling module chip_bridge_out
+Compiling module async_fifo
+Compiling module sync_fifo
+Compiling module async_fifo(DSIZE=3)
+Compiling module sync_fifo(DSIZE=3)
+Compiling module chip_bridge_in
+Compiling module chip_bridge
+Compiling module valrdy_to_credit
+Compiling module network_input_blk_multi_out
+Compiling module credit_to_valrdy
+Compiling module dff_ns
+Compiling module dffsl_async_ns
+Compiling module dffrl_async_ns(SIZE=15)
+Compiling module dffrl_async_ns(SIZE=17)
+Compiling module dffrl_async_ns
+Compiling module dffrle_ns
+Compiling module jtag_interface_tap
+Compiling module jtag_interface
+Compiling module jtag_ctap
+Compiling module dffe_ns(SIZE=4)
+Compiling module dffrl_ns
+Compiling module dffrle_ns(SIZE=32)
+Compiling module dffe_ns(SIZE=128)
+Compiling module ucb_bus_in(UCB_BUS_WIDTH=4)
+Compiling module jtag_ucb_receiver
+Compiling module dffrl_ns(SIZE=32)
+Compiling module dff_ns(SIZE=128)
+Compiling module ucb_bus_out(UCB_BUS_WIDTH=4)
+Compiling module jtag_ucb_transmitter
+Compiling module jtag
+Compiling module clk_gating_latch
+Compiling module one_of_eight(WIDTH=1)
+Compiling module net_dff(WIDTH=1)
+Compiling module net_dff(WIDTH=10)
+Compiling module bus_compare_equal(WIDTH=10)
+Compiling module flip_bus(WIDTH=1,BHC=14)
+Compiling module flip_bus(WIDTH=1,BHC=21)
+Compiling module flip_bus(WIDTH=64,BHC=14)
+Compiling module flip_bus(WIDTH=64,BHC=21)
+Compiling module flip_bus(WIDTH=1)
+Compiling module flip_bus(WIDTH=64)
+Compiling module dynamic_input_route_request_calc
+Compiling module dynamic_input_control
+Compiling module dynamic_input_top_4
+Compiling module network_input_blk_multi_out(LOG2...
+Compiling module dynamic_input_top_16
+Compiling module space_avail_top
+Compiling module one_of_five(WIDTH=64)
+Compiling module one_of_five(WIDTH=1)
+Compiling module dynamic_output_datapath
+Compiling module dynamic_output_control
+Compiling module dynamic_output_top
+Compiling module dynamic_node_top
+Compiling module dynamic_node_top_wrap
+Compiling module valrdy_to_credit(BUFFER_SIZE=16,...
+Compiling module cpx_spc_buf
+Compiling module cpx_spc_rpt
+Compiling module mux4ds(SIZE=3)
+Compiling module dff_s
+Compiling module dff_s(SIZE=3)
+Compiling module dff_s(SIZE=2)
+Compiling module sparc_ifu_dec
+Compiling module dffrl_async
+Compiling module dffr_s(SIZE=4)
+Compiling module sparc_ifu_thrcmpl
+Compiling module dff_s(SIZE=4)
+Compiling module sparc_ifu_thrfsm
+Compiling module dp_buffer(SIZE=4)
+Compiling module mux4ds(SIZE=4)
+Compiling module sparc_ifu_lru4
+Compiling module sparc_ifu_esl_lfsr
+Compiling module sparc_ifu_esl_counter
+Compiling module sparc_ifu_esl_shiftreg
+Compiling module sparc_ifu_esl_stsm(DIVERGED=0,DI...
+Compiling module sparc_ifu_esl_rtsm(DIVERGED=0,DI...
+Compiling module sparc_ifu_esl_htsm(DIVERGED=0,DI...
+Compiling module sparc_ifu_esl_fsm
+Compiling module sparc_ifu_esl
+Compiling module mux4ds(SIZE=11)
+Compiling module dffr_s
+Compiling module mux3ds(SIZE=3)
+Compiling module sink(SIZE=52)
+Compiling module sparc_ifu_swl
+Compiling module dff_s(SIZE=6)
+Compiling module mux4ds(SIZE=2)
+Compiling module zsoffm2_prim
+Compiling module bw_u1_soffm2_4x
+Compiling module mux3ds(SIZE=4)
+Compiling module bw_u1_muxi21_6x
+Compiling module bw_u1_inv_20x
+Compiling module mux2ds(SIZE=8)
+Compiling module dffr_s(SIZE=8)
+Compiling module sparc_ifu_dcl
+Compiling module dff_s(SIZE=32)
+Compiling module dp_mux4ds(SIZE=32)
+Compiling module dp_mux2es(SIZE=32)
+Compiling module dff_s(SIZE=5)
+Compiling module dp_mux2es(SIZE=5)
+Compiling module sparc_ifu_imd
+Compiling module dp_mux2ds(SIZE=13)
+Compiling module dp_mux3ds(SIZE=13)
+Compiling module dp_mux3ds(SIZE=64)
+Compiling module dp_mux4ds(SIZE=49)
+Compiling module dp_mux2es(SIZE=49)
+Compiling module dp_mux2ds(SIZE=48)
+Compiling module dp_mux3ds(SIZE=48)
+Compiling module dff_s(SIZE=48)
+Compiling module dp_mux3ds(SIZE=49)
+Compiling module dff_s(SIZE=49)
+Compiling module dp_mux2ds(SIZE=49)
+Compiling module sparc_ifu_incr46
+Compiling module dff_s(SIZE=8)
+Compiling module dp_mux2es(SIZE=33)
+Compiling module dp_mux2es(SIZE=38)
+Compiling module dff_s(SIZE=33)
+Compiling module dp_mux4ds(SIZE=33)
+Compiling module dp_mux4ds(SIZE=38)
+Compiling module dp_buffer(SIZE=33)
+Compiling module dp_buffer(SIZE=38)
+Compiling module dff_s(SIZE=38)
+Compiling module dp_mux2ds(SIZE=33)
+Compiling module dp_mux2ds(SIZE=38)
+Compiling module zckenbuf_prim
+Compiling module bw_u1_ckenbuf_6x
+Compiling module sparc_ifu_fdp
+Compiling module mux3ds
+Compiling module sparc_ifu_ctr5
+Compiling module dp_mux2es(SIZE=3)
+Compiling module dff_s(SIZE=9)
+Compiling module bw_u1_nand3_4x
+Compiling module bw_u1_buf_20x
+Compiling module bw_u1_aoi22_2x
+Compiling module bw_u1_nand2_4x
+Compiling module bw_u1_buf_10x
+Compiling module bw_u1_buf_5x
+Compiling module bw_u1_inv_15x
+Compiling module bw_u1_aoi21_4x
+Compiling module bw_u1_nand2_10x
+Compiling module bw_u1_nand2_15x
+Compiling module bw_u1_muxi21_2x
+Compiling module bw_u1_inv_8x
+Compiling module sink(SIZE=2)
+Compiling module sparc_ifu_fcl
+Compiling module bw_r_itlb
+Compiling module dp_mux4ds(SIZE=34)
+Compiling module sparc_ifu_wseldp
+Compiling module sink(SIZE=4)
+Compiling module sink(SIZE=8)
+Compiling module sink
+Compiling module sram_l1i_data
+Compiling module bw_r_icd
+Compiling module sram_l1i_tag
+Compiling module bw_r_ict
+Compiling module sram_l1i_val
+Compiling module sparc_ifu_cmp35
+Compiling module sparc_ifu_par32
+Compiling module dff_s(SIZE=41)
+Compiling module dp_mux4ds(SIZE=41)
+Compiling module dff_s(SIZE=39)
+Compiling module dff_s(SIZE=145)
+Compiling module dp_mux4ds(SIZE=145)
+Compiling module sink(SIZE=32)
+Compiling module sparc_ifu_swpla
+Compiling module dff_s(SIZE=16)
+Compiling module dp_mux2es(SIZE=12)
+Compiling module dff_s(SIZE=18)
+Compiling module sparc_ifu_ifqdp
+Compiling module dffr_s(SIZE=3)
+Compiling module sparc_ifu_milfsm
+Compiling module dffe_s(SIZE=4)
+Compiling module dffe_s(SIZE=2)
+Compiling module dp_mux2es(SIZE=2)
+Compiling module dp_mux2es(SIZE=4)
+Compiling module bw_u1_inv_10x
+Compiling module bw_u1_nand2_2x
+Compiling module sparc_ifu_lfsr5
+Compiling module sparc_ifu_rndrob
+Compiling module dp_mux2es
+Compiling module sparc_ifu_ifqctl
+Compiling module mux2ds
+Compiling module dff_s(SIZE=7)
+Compiling module mux4ds(SIZE=7)
+Compiling module mux3ds(SIZE=7)
+Compiling module sink(SIZE=145)
+Compiling module sparc_ifu_invctl
+Compiling module dff_s(SIZE=116)
+Compiling module sparc_ifu_par34
+Compiling module sparc_ifu_par16
+Compiling module dp_mux2es(SIZE=64)
+Compiling module dp_mux4ds(SIZE=64)
+Compiling module dff_s(SIZE=64)
+Compiling module dff_s(SIZE=36)
+Compiling module dff_s(SIZE=44)
+Compiling module dp_mux4ds(SIZE=44)
+Compiling module dp_mux2ds(SIZE=44)
+Compiling module dp_mux2es(SIZE=39)
+Compiling module dffr_s(SIZE=39)
+Compiling module sparc_ifu_errdp
+Compiling module dff_s(SIZE=10)
+Compiling module dffr_s(SIZE=24)
+Compiling module dffr_s(SIZE=12)
+Compiling module mux4ds(SIZE=23)
+Compiling module dffr_s(SIZE=16)
+Compiling module sparc_ifu_errctl
+Compiling module sparc_ifu_sscan
+Compiling module sparc_ifu
+Compiling module sparc_ifu_nospu_wrap
+Compiling module dffe_s
+Compiling module dffe_s(SIZE=3)
+Compiling module dffre_s
+Compiling module dffre_s(SIZE=2)
+Compiling module dffre_s(SIZE=3)
+Compiling module bw_u1_buf_30x
+Compiling module lsu_rrobin_picker2
+Compiling module mux4ds(SIZE=5)
+Compiling module lsu_pcx_qmon
+Compiling module lsu_qctl1
+Compiling module dffe_s(SIZE=6)
+Compiling module dffre_s(SIZE=7)
+Compiling module dff_s(SIZE=23)
+Compiling module dffre_s(SIZE=10)
+Compiling module dffre_s(SIZE=6)
+Compiling module bw_u1_minbuf_5x
+Compiling module dffe_s(SIZE=5)
+Compiling module lsu_qctl2
+Compiling module sram_l1d_data
+Compiling module lsu_dc_parity_gen(NUM=8)
+Compiling module bw_r_dcd
+Compiling module sram_l1d_val
+Compiling module sram_l1d_tag
+Compiling module bw_r_dct
+Compiling module lsu_tlbdp
+Compiling module dff_s(SIZE=31)
+Compiling module mux4ds(SIZE=64)
+Compiling module lsu_tagdp
+Compiling module mux4ds(SIZE=8)
+Compiling module mux4ds
+Compiling module dff_s(SIZE=14)
+Compiling module lsu_excpctl
+Compiling module clken_buf
+Compiling module dff_s(SIZE=13)
+Compiling module mux4ds(SIZE=13)
+Compiling module dff_s(SIZE=26)
+Compiling module mux4ds(SIZE=14)
+Compiling module dff_s(SIZE=28)
+Compiling module mux4ds(SIZE=44)
+Compiling module mux3ds(SIZE=13)
+Compiling module mux3ds(SIZE=48)
+Compiling module dff_s(SIZE=56)
+Compiling module mux4ds(SIZE=56)
+Compiling module mux4ds(SIZE=21)
+Compiling module dff_s(SIZE=29)
+Compiling module mux3ds(SIZE=44)
+Compiling module lsu_dctldp
+Compiling module bw_u1_buf_1x
+Compiling module dffre_s(SIZE=4)
+Compiling module dffe_s(SIZE=9)
+Compiling module dffre_s(SIZE=5)
+Compiling module mux3ds(SIZE=2)
+Compiling module lsu_dcache_lfsr
+Compiling module lsu_asi_decode
+Compiling module dff_s(SIZE=12)
+Compiling module dffe_s(SIZE=30)
+Compiling module dffe_s(SIZE=33)
+Compiling module dffe_s(SIZE=11)
+Compiling module mux2ds(SIZE=2)
+Compiling module bw_u1_nor3_8x
+Compiling module bw_u1_inv_30x
+Compiling module lsu_dctl
+Compiling module dff_s(SIZE=37)
+Compiling module lsu_dcdp
+Compiling module bw_r_dtlb
+Compiling module lsu_stb_rwctl
+Compiling module mux3ds(SIZE=8)
+Compiling module lsu_stb_rwdp
+Compiling module bw_r_scm
+Compiling module bw_r_rf32x80
+Compiling module dffre_s(SIZE=8)
+Compiling module lsu_stb_ctl
+Compiling module lsu_stb_ctldp
+Compiling module dff_s(SIZE=65)
+Compiling module mux2ds(SIZE=65)
+Compiling module mux2ds(SIZE=33)
+Compiling module mux2ds(SIZE=42)
+Compiling module mux2ds(SIZE=7)
+Compiling module mux3ds(SIZE=64)
+Compiling module mux2ds(SIZE=64)
+Compiling module dff_s(SIZE=124)
+Compiling module mux3ds(SIZE=124)
+Compiling module mux4ds(SIZE=124)
+Compiling module mux4ds(SIZE=33)
+Compiling module dff_s(SIZE=45)
+Compiling module mux4ds(SIZE=45)
+Compiling module lsu_qdp1
+Compiling module dff_s(SIZE=83)
+Compiling module mux4ds(SIZE=83)
+Compiling module dff_s(SIZE=108)
+Compiling module mux2ds(SIZE=152)
+Compiling module dff_s(SIZE=151)
+Compiling module mux2ds(SIZE=128)
+Compiling module lsu_dc_parity_gen
+Compiling module mux2ds(SIZE=16)
+Compiling module mux2ds(SIZE=144)
+Compiling module lsu_qdp2
+Compiling module bw_r_rf32x152b
+Compiling module lsu
+Compiling module lsu_nospu_wrap
+Compiling module bw_r_irf_72_2x1_mux
+Compiling module bw_r_irf_register(NUM_WINDOW_ENT...
+Compiling module bw_r_irf_register8
+Compiling module bw_r_irf_register
+Compiling module bw_r_irf_register16
+Compiling module bw_r_irf_core
+Compiling module bw_r_irf
+Compiling module bw_r_irf_wrap
+Compiling module dp_buffer(SIZE=64)
+Compiling module mux3ds(SIZE=32)
+Compiling module mux4ds(SIZE=32)
+Compiling module sparc_exu_byp_eccgen
+Compiling module sparc_exu_byp
+Compiling module zzecc_exu_chkecc2
+Compiling module sparc_exu_ecc_dec
+Compiling module sparc_exu_ecc
+Compiling module mux3ds(SIZE=9)
+Compiling module sparc_exu_eclccr
+Compiling module sparc_exu_ecl_wb
+Compiling module mux3ds(SIZE=5)
+Compiling module sparc_exu_ecl_eccctl
+Compiling module sparc_exu_eclcomp7
+Compiling module sparc_exu_eclbyplog_rs1
+Compiling module sparc_exu_eclbyplog
+Compiling module sparc_exu_ecl_cnt6
+Compiling module sparc_exu_ecl_divcntl
+Compiling module mux2ds(SIZE=12)
+Compiling module sparc_exu_ecl_mdqctl
+Compiling module sparc_exu_ecl
+Compiling module sparc_exu_aluor32
+Compiling module sparc_exu_aluzcmp64
+Compiling module sparc_exu_aluadder64
+Compiling module sparc_exu_aluspr
+Compiling module sparc_exu_aluaddsub
+Compiling module dp_buffer(SIZE=32)
+Compiling module sparc_exu_alulogic
+Compiling module sparc_exu_alu_16eql
+Compiling module sparc_exu_alu
+Compiling module sparc_exu_shft
+Compiling module dp_buffer(SIZE=128)
+Compiling module sparc_exu_div_32eql
+Compiling module mux3ds(SIZE=128)
+Compiling module dff_s(SIZE=128)
+Compiling module mux2ds(SIZE=32)
+Compiling module sparc_exu_div_yreg
+Compiling module sparc_exu_div
+Compiling module mux2ds(SIZE=3)
+Compiling module sparc_exu_rml_inc3
+Compiling module dffr_s(SIZE=15)
+Compiling module sparc_exu_rndrob
+Compiling module mux4ds(SIZE=15)
+Compiling module sparc_exu_rml_cwp
+Compiling module sparc_exu_reg
+Compiling module sparc_exu_rml
+Compiling module sparc_exu
+Compiling module sparc_exu_wrap
+Compiling module dp_mux2es(SIZE=6)
+Compiling module dp_mux2ds(SIZE=6)
+Compiling module sparc_tlu_dec64
+Compiling module dffr_s(SIZE=64)
+Compiling module dp_mux2ds(SIZE=64)
+Compiling module sparc_tlu_zcmp64
+Compiling module sparc_tlu_penc64
+Compiling module dp_mux2es(SIZE=11)
+Compiling module dff_s(SIZE=11)
+Compiling module dp_mux2ds(SIZE=11)
+Compiling module sparc_tlu_intdp
+Compiling module sparc_tlu_intctl
+Compiling module dff_s(SIZE=47)
+Compiling module mux4ds(SIZE=9)
+Compiling module mux2ds(SIZE=49)
+Compiling module mux3ds(SIZE=49)
+Compiling module tlu_misctl
+Compiling module dff_s(SIZE=20)
+Compiling module mux2ds(SIZE=9)
+Compiling module tlu_rrobin_picker
+Compiling module dffre_s(SIZE=12)
+Compiling module dffr_s(SIZE=2)
+Compiling module tlu_tcl
+Compiling module mux2ds(SIZE=136)
+Compiling module mux2ds(SIZE=17)
+Compiling module mux4ds(SIZE=17)
+Compiling module dffr_s(SIZE=14)
+Compiling module mux2ds(SIZE=15)
+Compiling module tlu_prencoder16
+Compiling module dff_s(SIZE=34)
+Compiling module mux2ds(SIZE=34)
+Compiling module mux2ds(SIZE=61)
+Compiling module dff_s(SIZE=61)
+Compiling module dff_s(SIZE=63)
+Compiling module mux2ds(SIZE=63)
+Compiling module mux3ds(SIZE=34)
+Compiling module mux2ds(SIZE=98)
+Compiling module mux2ds(SIZE=51)
+Compiling module mux3ds(SIZE=6)
+Compiling module mux2ds(SIZE=5)
+Compiling module mux3ds(SIZE=17)
+Compiling module tlu_tdp
+Compiling module tlu_incr64
+Compiling module dff_s(SIZE=19)
+Compiling module dff_s(SIZE=17)
+Compiling module dffe_s(SIZE=10)
+Compiling module dffre_s(SIZE=9)
+Compiling module dff_s(SIZE=24)
+Compiling module tlu_mmu_ctl
+Compiling module dff_s(SIZE=35)
+Compiling module dff_s(SIZE=40)
+Compiling module dp_mux2es(SIZE=41)
+Compiling module dffrl_s(SIZE=41)
+Compiling module dp_mux2es(SIZE=48)
+Compiling module dff_s(SIZE=58)
+Compiling module dff_s(SIZE=42)
+Compiling module mux4ds(SIZE=48)
+Compiling module dp_mux2es(SIZE=24)
+Compiling module dffrl_s
+Compiling module dp_mux4ds(SIZE=24)
+Compiling module tlu_mmu_dp
+Compiling module dffe_s(SIZE=8)
+Compiling module tlu_hyperv
+Compiling module bw_r_rf16x160
+Compiling module tlu_addern_32(ADDER_DATA_WIDTH=3...
+Compiling module tlu_addern_32(INCR_DATA_WIDTH=3)
+Compiling module mux3ds(SIZE=33)
+Compiling module tlu_addern_32_default
+Compiling module tlu_pib
+Compiling module tlu
+Compiling module tlu_nospu_wrap
+Compiling module sparc_mul_cntl
+Compiling module mul_bodec
+Compiling module mul_booth
+Compiling module mul_negen
+Compiling module mul_csa42
+Compiling module mul_csa32
+Compiling module mul_ha
+Compiling module mul_ppgensign
+Compiling module mul_ppgen
+Compiling module mul_ppgen3sign
+Compiling module mul_ppgen3
+Compiling module mul_ppgen3lsb4
+Compiling module mul_ppgenrow3
+Compiling module mul_array1
+Compiling module dff_s(SIZE=78)
+Compiling module dff_s(SIZE=82)
+Compiling module mul_mux2
+Compiling module mul_array2
+Compiling module dp_mux2es(SIZE=97)
+Compiling module dff_s(SIZE=97)
+Compiling module dp_mux2es(SIZE=98)
+Compiling module dff_s(SIZE=98)
+Compiling module dff_s(SIZE=68)
+Compiling module dff_s(SIZE=69)
+Compiling module dff_s(SIZE=104)
+Compiling module mul64
+Compiling module dffr_s(SIZE=136)
+Compiling module sparc_mul_dp
+Compiling module sparc_mul_top
+Compiling module sparc_mul_top_nospu_wrap
+Compiling module sram_1rw_128x78
+Compiling module bw_r_frf
+Compiling module mux3ds(SIZE=28)
+Compiling module dffr_s(SIZE=28)
+Compiling module mux2ds(SIZE=28)
+Compiling module zzecc_sctag_ecc39
+Compiling module dffr_s(SIZE=37)
+Compiling module dp_mux2es(SIZE=37)
+Compiling module mux2ds(SIZE=37)
+Compiling module sparc_ffu_dp
+Compiling module mux2ds(SIZE=6)
+Compiling module mux4ds(SIZE=6)
+Compiling module dff_s(SIZE=43)
+Compiling module dffr_s(SIZE=6)
+Compiling module sparc_ffu_ctl_visctl
+Compiling module sparc_ffu_ctl
+Compiling module sparc_ffu_part_add32
+Compiling module dp_buffer(SIZE=56)
+Compiling module mux4ds(SIZE=72)
+Compiling module sparc_ffu_vis
+Compiling module sparc_ffu
+Compiling module sparc_ffu_nospu_wrap
+Compiling module cfg_asi
+Compiling module sparc
+Compiling module sparc_core
+Compiling module fpu_in_ctl
+Compiling module dffe_s(SIZE=69)
+Compiling module dff_s(SIZE=155)
+Compiling module fpu_in_dp
+Compiling module fpu_in
+Compiling module dffre_s(SIZE=31)
+Compiling module dffre_s(SIZE=19)
+Compiling module dffre_s(SIZE=18)
+Compiling module fpu_add_ctl
+Compiling module dffe_s(SIZE=13)
+Compiling module dffe_s(SIZE=12)
+Compiling module fpu_add_exp_dp
+Compiling module dffe_s(SIZE=63)
+Compiling module dffe_s(SIZE=55)
+Compiling module dffe_s(SIZE=64)
+Compiling module fpu_in2_gt_in1_3b
+Compiling module fpu_in2_gt_in1_2b
+Compiling module fpu_in2_gt_in1_3to1
+Compiling module fpu_in2_gt_in1_frac
+Compiling module dffe_s(SIZE=54)
+Compiling module fpu_denorm_3b
+Compiling module fpu_denorm_3to1
+Compiling module fpu_denorm_frac
+Compiling module fpu_cnt_lead0_lvl1
+Compiling module fpu_cnt_lead0_lvl2
+Compiling module fpu_cnt_lead0_lvl3
+Compiling module fpu_cnt_lead0_lvl4
+Compiling module fpu_cnt_lead0_64b
+Compiling module dffe_s(SIZE=58)
+Compiling module fpu_add_frac_dp
+Compiling module fpu_add
+Compiling module dffe_s(SIZE=7)
+Compiling module fpu_mul_ctl
+Compiling module fpu_mul_exp_dp
+Compiling module fpu_cnt_lead0_53b
+Compiling module dffe_s(SIZE=56)
+Compiling module dff_s(SIZE=55)
+Compiling module dffe_s(SIZE=52)
+Compiling module fpu_mul_frac_dp
+Compiling module fpu_mul
+Compiling module fpu_div_ctl
+Compiling module fpu_div_exp_dp
+Compiling module dff_s(SIZE=53)
+Compiling module fpu_div_frac_dp
+Compiling module fpu_div
+Compiling module fpu_out_ctl
+Compiling module dff_s(SIZE=77)
+Compiling module fpu_out_dp
+Compiling module fpu_out
+Compiling module test_stub_scan
+Compiling module fpu_bufrpt_grp32
+Compiling module fpu_bufrpt_grp64
+Compiling module fpu_bufrpt_grp4
+Compiling module fpu_rptr_pcx_fpio_grp16
+Compiling module fpu_rptr_fp_cpx_grp16
+Compiling module fpu_rptr_inq
+Compiling module fpu_rptr_groups
+Compiling module fpu
+Compiling module fpu_buf
+Compiling module fpu_arb
+Compiling module fpu_arb_wrap
+Compiling module l15_home_encoder
+Compiling module l15_priority_encoder_1
+Compiling module l15_priority_encoder_2
+Compiling module l15_priority_encoder_3
+Compiling module l15_priority_encoder_4
+Compiling module l15_hmc
+Compiling module flat_id_to_xy
+Compiling module l15_csm
+Compiling module pcx_buffer
+Compiling module pcx_decoder
+Compiling module simplenocbuffer
+Compiling module noc2decoder
+Compiling module sram_l15_tag
+Compiling module sram_l15_data
+Compiling module sram_l15_hmt
+Compiling module l15_mshr
+Compiling module rf_l15_mesi
+Compiling module rf_l15_wmt
+Compiling module rf_l15_lruarray
+Compiling module l15_pipeline
+Compiling module l15_cpxencoder
+Compiling module noc1buffer
+Compiling module noc1encoder
+Compiling module noc3buffer
+Compiling module noc3encoder
+Compiling module l15
+Compiling module l15_wrap
+Compiling module dmbr
+Compiling module cpx_arbitrator
+Compiling module l2_config_regs
+Compiling module l2_mshr
+Compiling module l2_mshr_wrap
+Compiling module sram_l2_state
+Compiling module l2_state
+Compiling module l2_state_wrap
+Compiling module sram_l2_tag
+Compiling module l2_tag
+Compiling module l2_tag_wrap
+Compiling module sram_l2_dir
+Compiling module l2_dir
+Compiling module l2_dir_wrap
+Compiling module sram_l2_data
+Compiling module l2_data
+Compiling module l2_data_wrap
+Compiling module l2_priority_encoder_1
+Compiling module l2_priority_encoder_2
+Compiling module l2_priority_encoder_3
+Compiling module l2_priority_encoder_4
+Compiling module l2_smc
+Compiling module l2_smc_wrap
+Compiling module l2_broadcast_counter
+Compiling module l2_broadcast_counter_wrap
+Compiling module l2_pipe1_buf_in
+Compiling module l2_decoder
+Compiling module l2_mshr_decoder
+Compiling module l2_priority_encoder_5
+Compiling module l2_priority_encoder_6
+Compiling module l2_pipe1_ctrl
+Compiling module l2_data_pgen
+Compiling module l2_data_ecc
+Compiling module l2_pipe1_dpath
+Compiling module l2_encoder
+Compiling module l2_pipe1_buf_out
+Compiling module l2_pipe1
+Compiling module l2_pipe2_buf_in
+Compiling module l2_pipe2_ctrl
+Compiling module l2_pipe2_dpath
+Compiling module l2_pipe2
+Compiling module l2
+Compiling module config_regs
+Compiling module rtap_ucb_receiver
+Compiling module rtap_ucb_transmitter
+Compiling module rtap
+Compiling module tile
+Compiling module chip
+Compiling module bridge_network_chooser_32(FULL_T...
+Compiling module async_fifo(ASIZE=9,MEMSIZE=256)
+Compiling module async_fifo(DSIZE=3,ASIZE=11,MEMS...
+Compiling module fpga_bridge_send_32(FULL_THRESHO...
+Compiling module fpga_bridge_rcv_32
+Compiling module fpga_bridge(SEND_CREDIT_THRESHOL...
+Compiling module mem_io_splitter
+Compiling module chipset_impl
+Compiling module chipset
+Compiling module system
+Compiling module fake_mem_ctrl
+Compiling module ciop_fake_iob
+ERROR:Simulator:992 - "/home/dave/embedded_project/embedded_project/single_core/ciop_iob.tmp.v" Line 273. init_iob_model system task is not supported

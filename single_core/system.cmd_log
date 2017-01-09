@@ -1,0 +1,3 @@
+vhdtdtfi -lang verilog -prj singlecore -o /home/dave/Documenti/Embedded/embedded_project/singlecore/system.tfi -lib work /home/dave/embedded_project/embedded_project/single_core//system.v -module system -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "/home/dave/Documenti/Embedded/embedded_project/singlecore/system.xst" -ofn "/home/dave/Documenti/Embedded/embedded_project/singlecore/system.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim system.ngc system_synthesis.v 

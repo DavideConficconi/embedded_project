@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="singlecore" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Automatic `includes</ClosedNode>
+         <ClosedNode>/bw_r_rf32x80_ref |home|dave|embedded_project|embedded_project|single_core|bw_r_rf32x80.v</ClosedNode>
+         <ClosedNode>/bw_u1_ckenbuf_14x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_ckenbuf_4p5x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_muxi31d_4x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_muxi41d_4x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_muxi41d_6x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soff_1x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soff_2x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soff_4x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soff_8x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soffasr_2x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soffi_4x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soffi_8x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soffm2_8x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soffr_2x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soffr_4x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soffr_8x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/cmp_top |home|dave|embedded_project|embedded_project|single_core|manycore_top.tmp.v/fake_mem_ctrl - fake_mem_ctrl</ClosedNode>
+         <ClosedNode>/cmp_top |home|dave|embedded_project|embedded_project|single_core|manycore_top.tmp.v/monitor - monitor</ClosedNode>
+         <ClosedNode>/cmp_top |home|dave|embedded_project|embedded_project|single_core|manycore_top.tmp.v/system - system</ClosedNode>
+         <ClosedNode>/sparc_ifu_mbist |home|dave|embedded_project|embedded_project|single_core|sparc_ifu_mbist.v</ClosedNode>
+         <ClosedNode>/system |home|dave|embedded_project|embedded_project|single_core|system.v/chip - chip/chip_intf - chip_bridge</ClosedNode>
+         <ClosedNode>/system |home|dave|embedded_project|embedded_project|single_core|system.v/chip - chip/chip_to_intf_noc1_c2v - credit_to_valrdy</ClosedNode>
+         <ClosedNode>/system |home|dave|embedded_project|embedded_project|single_core|system.v/chip - chip/chip_to_intf_noc2_c2v - credit_to_valrdy</ClosedNode>
+         <ClosedNode>/system |home|dave|embedded_project|embedded_project|single_core|system.v/chip - chip/chip_to_intf_noc3_c2v - credit_to_valrdy</ClosedNode>
+         <ClosedNode>/system |home|dave|embedded_project|embedded_project|single_core|system.v/chip - chip/jtag_port - jtag</ClosedNode>
+         <ClosedNode>/system |home|dave|embedded_project|embedded_project|single_core|system.v/chip - chip/tile0 - tile</ClosedNode>
+         <ClosedNode>/system |home|dave|embedded_project|embedded_project|single_core|system.v/chipset - chipset</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>cmp_top (/home/dave/embedded_project/embedded_project/single_core/manycore_top.tmp.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >244</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000266000000020000000000000000000000000200000064ffffffff000000810000000300000002000002660000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>cmp_top (/home/dave/embedded_project/embedded_project/single_core/manycore_top.tmp.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000390000000040101000100000000000000000000000064ffffffff0000008100000000000000040000004f0000000100000000000000290000000100000000000000840000000100000000000002940000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>async_fifo.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000128000000010001000100000000000000000000000064ffffffff000000810000000000000001000001280000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Check Syntax</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Check Syntax</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000014c0000011d01000000060100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/bw_r_icd_orig |home|dave|embedded_project|embedded_project|single_core|bw_r_icd.v</ClosedNode>
+         <ClosedNode>/bw_r_rf32x80_ref |home|dave|embedded_project|embedded_project|single_core|bw_r_rf32x80.v</ClosedNode>
+         <ClosedNode>/bw_u1_ckenbuf_14x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_ckenbuf_4p5x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_muxi31d_4x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_muxi41d_4x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_muxi41d_6x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soff_1x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soff_2x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soff_4x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soff_8x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soffasr_2x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soffi_4x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soffi_8x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soffm2_8x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soffr_2x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soffr_4x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/bw_u1_soffr_8x |home|dave|embedded_project|embedded_project|single_core|u1.beh.v</ClosedNode>
+         <ClosedNode>/cmp_top |home|dave|embedded_project|embedded_project|single_core|manycore_top.tmp.v/fake_mem_ctrl - fake_mem_ctrl</ClosedNode>
+         <ClosedNode>/cmp_top |home|dave|embedded_project|embedded_project|single_core|manycore_top.tmp.v/system - system</ClosedNode>
+         <ClosedNode>/sparc_ifu_mbist |home|dave|embedded_project|embedded_project|single_core|sparc_ifu_mbist.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>cmp_top (/home/dave/embedded_project/embedded_project/single_core/manycore_top.tmp.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >247</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000266000000020000000000000000000000000200000064ffffffff000000810000000300000002000002660000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>cmp_top (/home/dave/embedded_project/embedded_project/single_core/manycore_top.tmp.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ISim Simulator</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ISim Simulator</CurrentItem>
+   </ItemView>
+</Project>

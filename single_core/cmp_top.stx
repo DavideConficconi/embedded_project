@@ -1,0 +1,1487 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/dave/embedded_project/embedded_project/single_core/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/dave/embedded_project/embedded_project/single_core/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: cmp_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/swrvr_clib.v" into library work
+Parsing module <dff_s>.
+Parsing module <dff_sscan>.
+Parsing module <dff_ns>.
+Parsing module <dffr_s>.
+Parsing module <dffrl_s>.
+Parsing module <dffr_ns>.
+Parsing module <dffrl_ns>.
+Parsing module <dffe_s>.
+Parsing module <dffe_ns>.
+Parsing module <dffre_s>.
+Parsing module <dffrle_s>.
+Parsing module <dffre_ns>.
+Parsing module <dffrle_ns>.
+Parsing module <dffr_async>.
+Parsing module <dffrl_async>.
+Parsing module <dffrl_async_ns>.
+Parsing module <mux2ds>.
+Parsing module <mux3ds>.
+Parsing module <mux4ds>.
+Parsing module <sink>.
+Parsing module <source>.
+Parsing module <clken_buf>.
+Parsing module <dffsl_ns>.
+Parsing module <dffsl_async_ns>.
+Parsing module <dffr_ns_r1>.
+Parsing module <dffr_async_ns>.
+Parsing module <dffr_async_ns_r1>.
+Parsing module <dffr_async_ns_cl_r1>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_esl_stsm.v" into library work
+Parsing module <sparc_ifu_esl_stsm>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_esl_shiftreg.v" into library work
+Parsing module <sparc_ifu_esl_shiftreg>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_esl_rtsm.v" into library work
+Parsing module <sparc_ifu_esl_rtsm>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_esl_lfsr.v" into library work
+Parsing module <sparc_ifu_esl_lfsr>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_esl_htsm.v" into library work
+Parsing module <sparc_ifu_esl_htsm>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_esl_counter.v" into library work
+Parsing module <sparc_ifu_esl_counter>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_irf_register.v" into library work
+Parsing module <bw_r_irf_register>.
+Parsing module <bw_r_irf_72_2x1_mux>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/swrvr_dlib.v" into library work
+Parsing module <dp_mux2es>.
+Parsing module <dp_mux4ds>.
+Parsing module <dp_mux5ds>.
+Parsing module <dp_mux8ds>.
+Parsing module <dp_mux3ds>.
+Parsing module <dp_mux2ds>.
+Parsing module <dp_buffer>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_esl_fsm.v" into library work
+Parsing verilog file "define.vh" included at line 36.
+Parsing verilog file "network_define.v" included at line 44.
+Parsing module <sparc_ifu_esl_fsm>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_rndrob.v" into library work
+Parsing module <sparc_exu_rndrob>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_ecl_cnt6.v" into library work
+Parsing module <sparc_exu_ecl_cnt6>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_eclcomp7.v" into library work
+Parsing module <sparc_exu_eclcomp7>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_aluspr.v" into library work
+Parsing module <sparc_exu_aluspr>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_aluor32.v" into library work
+Parsing module <sparc_exu_aluor32>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_aluadder64.v" into library work
+Parsing module <sparc_exu_aluadder64>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_in2_gt_in1_3to1.v" into library work
+Parsing module <fpu_in2_gt_in1_3to1>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_in2_gt_in1_3b.v" into library work
+Parsing module <fpu_in2_gt_in1_3b>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_in2_gt_in1_2b.v" into library work
+Parsing module <fpu_in2_gt_in1_2b>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_denorm_3to1.v" into library work
+Parsing module <fpu_denorm_3to1>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_denorm_3b.v" into library work
+Parsing module <fpu_denorm_3b>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_cnt_lead0_lvl4.v" into library work
+Parsing module <fpu_cnt_lead0_lvl4>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_cnt_lead0_lvl3.v" into library work
+Parsing module <fpu_cnt_lead0_lvl3>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_cnt_lead0_lvl2.v" into library work
+Parsing module <fpu_cnt_lead0_lvl2>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_cnt_lead0_lvl1.v" into library work
+Parsing module <fpu_cnt_lead0_lvl1>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_irf_register8.v" into library work
+Parsing module <bw_r_irf_register8>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_irf_register16.v" into library work
+Parsing module <bw_r_irf_register16>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/u1.beh.v" into library work
+Parsing module <bw_u1_inv_0p6x>.
+Parsing module <bw_u1_inv_1x>.
+Parsing module <bw_u1_inv_1p4x>.
+Parsing module <bw_u1_inv_2x>.
+Parsing module <bw_u1_inv_3x>.
+Parsing module <bw_u1_inv_4x>.
+Parsing module <bw_u1_inv_5x>.
+Parsing module <bw_u1_inv_8x>.
+Parsing module <bw_u1_inv_10x>.
+Parsing module <bw_u1_inv_15x>.
+Parsing module <bw_u1_inv_20x>.
+Parsing module <bw_u1_inv_30x>.
+Parsing module <bw_u1_inv_40x>.
+Parsing module <bw_u1_invh_15x>.
+Parsing module <bw_u1_invh_25x>.
+Parsing module <bw_u1_invh_30x>.
+Parsing module <bw_u1_invh_50x>.
+Parsing module <bw_u1_invh_60x>.
+Parsing module <bw_u1_nand2_0p4x>.
+Parsing module <bw_u1_nand2_0p6x>.
+Parsing module <bw_u1_nand2_1x>.
+Parsing module <bw_u1_nand2_1p4x>.
+Parsing module <bw_u1_nand2_2x>.
+Parsing module <bw_u1_nand2_3x>.
+Parsing module <bw_u1_nand2_4x>.
+Parsing module <bw_u1_nand2_5x>.
+Parsing module <bw_u1_nand2_7x>.
+Parsing module <bw_u1_nand2_10x>.
+Parsing module <bw_u1_nand2_15x>.
+Parsing module <bw_u1_nand3_0p4x>.
+Parsing module <bw_u1_nand3_0p6x>.
+Parsing module <bw_u1_nand3_1x>.
+Parsing module <bw_u1_nand3_1p4x>.
+Parsing module <bw_u1_nand3_2x>.
+Parsing module <bw_u1_nand3_3x>.
+Parsing module <bw_u1_nand3_4x>.
+Parsing module <bw_u1_nand3_5x>.
+Parsing module <bw_u1_nand3_7x>.
+Parsing module <bw_u1_nand3_10x>.
+Parsing module <bw_u1_nand4_0p6x>.
+Parsing module <bw_u1_nand4_1x>.
+Parsing module <bw_u1_nand4_1p4x>.
+Parsing module <bw_u1_nand4_2x>.
+Parsing module <bw_u1_nand4_3x>.
+Parsing module <bw_u1_nand4_4x>.
+Parsing module <bw_u1_nand4_6x>.
+Parsing module <bw_u1_nand4_8x>.
+Parsing module <bw_u1_nor2_0p6x>.
+Parsing module <bw_u1_nor2_1x>.
+Parsing module <bw_u1_nor2_1p4x>.
+Parsing module <bw_u1_nor2_2x>.
+Parsing module <bw_u1_nor2_3x>.
+Parsing module <bw_u1_nor2_4x>.
+Parsing module <bw_u1_nor2_6x>.
+Parsing module <bw_u1_nor2_8x>.
+Parsing module <bw_u1_nor2_12x>.
+Parsing module <bw_u1_nor3_0p6x>.
+Parsing module <bw_u1_nor3_1x>.
+Parsing module <bw_u1_nor3_1p4x>.
+Parsing module <bw_u1_nor3_2x>.
+Parsing module <bw_u1_nor3_3x>.
+Parsing module <bw_u1_nor3_4x>.
+Parsing module <bw_u1_nor3_6x>.
+Parsing module <bw_u1_nor3_8x>.
+Parsing module <bw_u1_aoi21_0p4x>.
+Parsing module <bw_u1_aoi21_1x>.
+Parsing module <bw_u1_aoi21_2x>.
+Parsing module <bw_u1_aoi21_4x>.
+Parsing module <bw_u1_aoi21_8x>.
+Parsing module <bw_u1_aoi21_12x>.
+Parsing module <bw_u1_aoi22_0p4x>.
+Parsing module <bw_u1_aoi22_1x>.
+Parsing module <bw_u1_aoi22_2x>.
+Parsing module <bw_u1_aoi22_4x>.
+Parsing module <bw_u1_aoi22_8x>.
+Parsing module <bw_u1_aoi211_0p3x>.
+Parsing module <bw_u1_aoi211_1x>.
+Parsing module <bw_u1_aoi211_2x>.
+Parsing module <bw_u1_aoi211_4x>.
+Parsing module <bw_u1_aoi211_8x>.
+Parsing module <bw_u1_oai21_0p4x>.
+Parsing module <bw_u1_oai21_1x>.
+Parsing module <bw_u1_oai21_2x>.
+Parsing module <bw_u1_oai21_4x>.
+Parsing module <bw_u1_oai21_8x>.
+Parsing module <bw_u1_oai21_12x>.
+Parsing module <bw_u1_oai22_0p4x>.
+Parsing module <bw_u1_oai22_1x>.
+Parsing module <bw_u1_oai22_2x>.
+Parsing module <bw_u1_oai22_4x>.
+Parsing module <bw_u1_oai22_8x>.
+Parsing module <bw_u1_oai211_0p3x>.
+Parsing module <bw_u1_oai211_1x>.
+Parsing module <bw_u1_oai211_2x>.
+Parsing module <bw_u1_oai211_4x>.
+Parsing module <bw_u1_oai211_8x>.
+Parsing module <bw_u1_aoi31_1x>.
+Parsing module <bw_u1_aoi31_2x>.
+Parsing module <bw_u1_aoi31_4x>.
+Parsing module <bw_u1_aoi31_8x>.
+Parsing module <bw_u1_aoi32_1x>.
+Parsing module <bw_u1_aoi32_2x>.
+Parsing module <bw_u1_aoi32_4x>.
+Parsing module <bw_u1_aoi32_8x>.
+Parsing module <bw_u1_aoi33_1x>.
+Parsing module <bw_u1_aoi33_2x>.
+Parsing module <bw_u1_aoi33_4x>.
+Parsing module <bw_u1_aoi33_8x>.
+Parsing module <bw_u1_aoi221_1x>.
+Parsing module <bw_u1_aoi221_2x>.
+Parsing module <bw_u1_aoi221_4x>.
+Parsing module <bw_u1_aoi221_8x>.
+Parsing module <bw_u1_aoi222_1x>.
+Parsing module <bw_u1_aoi222_2x>.
+Parsing module <bw_u1_aoi222_4x>.
+Parsing module <bw_u1_aoi311_1x>.
+Parsing module <bw_u1_aoi311_2x>.
+Parsing module <bw_u1_aoi311_4x>.
+Parsing module <bw_u1_aoi311_8x>.
+Parsing module <bw_u1_oai31_1x>.
+Parsing module <bw_u1_oai31_2x>.
+Parsing module <bw_u1_oai31_4x>.
+Parsing module <bw_u1_oai31_8x>.
+Parsing module <bw_u1_oai32_1x>.
+Parsing module <bw_u1_oai32_2x>.
+Parsing module <bw_u1_oai32_4x>.
+Parsing module <bw_u1_oai32_8x>.
+Parsing module <bw_u1_oai33_1x>.
+Parsing module <bw_u1_oai33_2x>.
+Parsing module <bw_u1_oai33_4x>.
+Parsing module <bw_u1_oai33_8x>.
+Parsing module <bw_u1_oai221_1x>.
+Parsing module <bw_u1_oai221_2x>.
+Parsing module <bw_u1_oai221_4x>.
+Parsing module <bw_u1_oai221_8x>.
+Parsing module <bw_u1_oai222_1x>.
+Parsing module <bw_u1_oai222_2x>.
+Parsing module <bw_u1_oai222_4x>.
+Parsing module <bw_u1_oai311_1x>.
+Parsing module <bw_u1_oai311_2x>.
+Parsing module <bw_u1_oai311_4x>.
+Parsing module <bw_u1_oai311_8x>.
+Parsing module <bw_u1_muxi21_0p6x>.
+Parsing module <bw_u1_muxi21_1x>.
+Parsing module <bw_u1_muxi21_2x>.
+Parsing module <bw_u1_muxi21_4x>.
+Parsing module <bw_u1_muxi21_6x>.
+Parsing module <bw_u1_muxi31d_4x>.
+Parsing module <bw_u1_muxi41d_4x>.
+Parsing module <bw_u1_muxi41d_6x>.
+Parsing module <bw_u1_xor2_0p6x>.
+Parsing module <bw_u1_xor2_1x>.
+Parsing module <bw_u1_xor2_2x>.
+Parsing module <bw_u1_xor2_4x>.
+Parsing module <bw_u1_xnor2_0p6x>.
+Parsing module <bw_u1_xnor2_1x>.
+Parsing module <bw_u1_xnor2_2x>.
+Parsing module <bw_u1_xnor2_4x>.
+Parsing module <bw_u1_buf_1x>.
+Parsing module <bw_u1_buf_5x>.
+Parsing module <bw_u1_buf_10x>.
+Parsing module <bw_u1_buf_15x>.
+Parsing module <bw_u1_buf_20x>.
+Parsing module <bw_u1_buf_30x>.
+Parsing module <bw_u1_buf_40x>.
+Parsing module <bw_u1_ao2222_1x>.
+Parsing module <bw_u1_ao2222_2x>.
+Parsing module <bw_u1_ao2222_4x>.
+Parsing module <bw_u1_soff_1x>.
+Parsing module <bw_u1_soff_2x>.
+Parsing module <bw_u1_soff_4x>.
+Parsing module <bw_u1_soff_8x>.
+Parsing module <bw_u1_soffi_4x>.
+Parsing module <bw_u1_soffi_8x>.
+Parsing module <bw_u1_soffm2_4x>.
+Parsing module <bw_u1_soffm2_8x>.
+Parsing module <bw_u1_soffr_2x>.
+Parsing module <bw_u1_soffr_4x>.
+Parsing module <bw_u1_soffr_8x>.
+Parsing module <bw_u1_soffasr_2x>.
+Parsing module <bw_u1_ckbuf_1p5x>.
+Parsing module <bw_u1_ckbuf_3x>.
+Parsing module <bw_u1_ckbuf_4p5x>.
+Parsing module <bw_u1_ckbuf_6x>.
+Parsing module <bw_u1_ckbuf_7x>.
+Parsing module <bw_u1_ckbuf_8x>.
+Parsing module <bw_u1_ckbuf_11x>.
+Parsing module <bw_u1_ckbuf_14x>.
+Parsing module <bw_u1_ckbuf_17x>.
+Parsing module <bw_u1_ckbuf_19x>.
+Parsing module <bw_u1_ckbuf_22x>.
+Parsing module <bw_u1_ckbuf_25x>.
+Parsing module <bw_u1_ckbuf_28x>.
+Parsing module <bw_u1_ckbuf_30x>.
+Parsing module <bw_u1_ckbuf_33x>.
+Parsing module <bw_u1_ckbuf_40x>.
+Parsing module <bw_u1_ckenbuf_6x>.
+Parsing module <bw_u1_ckenbuf_14x>.
+Parsing module <bw_u1_zhinv_0p6x>.
+Parsing module <bw_u1_zhinv_1x>.
+Parsing module <bw_u1_zhinv_1p4x>.
+Parsing module <bw_u1_zhinv_2x>.
+Parsing module <bw_u1_zhinv_3x>.
+Parsing module <bw_u1_zhinv_4x>.
+Parsing module <bw_u1_zhnand2_0p4x>.
+Parsing module <bw_u1_zhnand2_0p6x>.
+Parsing module <bw_u1_zhnand2_1x>.
+Parsing module <bw_u1_zhnand2_1p4x>.
+Parsing module <bw_u1_zhnand2_2x>.
+Parsing module <bw_u1_zhnand2_3x>.
+Parsing module <bw_u1_zhnand3_0p6x>.
+Parsing module <bw_u1_zhnand3_1x>.
+Parsing module <bw_u1_zhnand3_2x>.
+Parsing module <bw_u1_zhnand4_0p6x>.
+Parsing module <bw_u1_zhnand4_1x>.
+Parsing module <bw_u1_zhnand4_2x>.
+Parsing module <bw_u1_zhnor2_0p6x>.
+Parsing module <bw_u1_zhnor2_1x>.
+Parsing module <bw_u1_zhnor2_2x>.
+Parsing module <bw_u1_zhnor3_0p6x>.
+Parsing module <bw_u1_zhaoi21_0p4x>.
+Parsing module <bw_u1_zhaoi21_1x>.
+Parsing module <bw_u1_zhoai21_1x>.
+Parsing module <bw_u1_zhoai211_0p3x>.
+Parsing module <bw_u1_zhoai211_1x>.
+Parsing module <bw_u1_scanlg_2x>.
+Parsing module <bw_u1_scanl_2x>.
+Parsing module <bw_u1_syncff_4x>.
+Parsing module <bw_u1_zzeccxor2_5x>.
+Parsing module <bw_u1_zzmulcsa42_5x>.
+Parsing module <bw_u1_zzmulcsa32_5x>.
+Parsing module <bw_u1_zzmulppmuxi21_2x>.
+Parsing module <bw_u1_zzmulnand2_2x>.
+Parsing module <zmuxi31d_prim>.
+Parsing module <zmuxi41d_prim>.
+Parsing module <zsoff_prim>.
+Parsing module <zsoffr_prim>.
+Parsing module <zsoffi_prim>.
+Parsing module <zsoffm2_prim>.
+Parsing module <zsoffasr_prim>.
+Parsing module <zckenbuf_prim>.
+Parsing module <bw_mckbuf_40x>.
+Parsing module <bw_mckbuf_33x>.
+Parsing module <bw_mckbuf_30x>.
+Parsing module <bw_mckbuf_28x>.
+Parsing module <bw_mckbuf_25x>.
+Parsing module <bw_mckbuf_22x>.
+Parsing module <bw_mckbuf_19x>.
+Parsing module <bw_mckbuf_17x>.
+Parsing module <bw_mckbuf_14x>.
+Parsing module <bw_mckbuf_11x>.
+Parsing module <bw_mckbuf_8x>.
+Parsing module <bw_mckbuf_7x>.
+Parsing module <bw_mckbuf_6x>.
+Parsing module <bw_mckbuf_4p5x>.
+Parsing module <bw_mckbuf_3x>.
+Parsing module <bw_mckbuf_1p5x>.
+Parsing module <bw_u1_minbuf_1x>.
+Parsing module <bw_u1_minbuf_4x>.
+Parsing module <bw_u1_minbuf_5x>.
+Parsing module <bw_u1_ckenbuf_4p5x>.
+Parsing module <bw_u1_fill_1x>.
+Parsing module <bw_u1_fill_2x>.
+Parsing module <bw_u1_fill_3x>.
+Parsing module <bw_u1_fill_4x>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_rrobin_picker.v" into library work
+Parsing verilog file "sys.h" included at line 31.
+Parsing module <tlu_rrobin_picker>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_prencoder16.v" into library work
+Parsing verilog file "sys.h" included at line 33.
+Parsing module <tlu_prencoder16>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_addern_32.v" into library work
+Parsing verilog file "sys.h" included at line 29.
+Parsing module <tlu_addern_32>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l1i_tag.v" into library work
+Parsing verilog file "define.vh" included at line 32.
+Parsing verilog file "ifu.tmp.h" included at line 33.
+Parsing module <sram_l1i_tag>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l1i_data.v" into library work
+Parsing verilog file "define.vh" included at line 32.
+Parsing verilog file "ifu.tmp.h" included at line 33.
+Parsing module <sram_l1i_data>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l1d_tag.v" into library work
+Parsing verilog file "define.vh" included at line 32.
+Parsing verilog file "lsu.tmp.h" included at line 33.
+Parsing module <sram_l1d_tag>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l1d_data.v" into library work
+Parsing verilog file "define.vh" included at line 32.
+Parsing verilog file "lsu.tmp.h" included at line 33.
+Parsing module <sram_l1d_data>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_1rw_128x78.v" into library work
+Parsing verilog file "define.vh" included at line 32.
+Parsing module <sram_1rw_128x78>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_tlu_zcmp64.v" into library work
+Parsing module <sparc_tlu_zcmp64>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_tlu_penc64.tmp.v" into library work
+Parsing module <sparc_tlu_penc64>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_tlu_dec64.tmp.v" into library work
+Parsing module <sparc_tlu_dec64>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_thrfsm.v" into library work
+Parsing verilog file "ifu.tmp.h" included at line 29.
+Parsing module <sparc_ifu_thrfsm>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_thrcmpl.v" into library work
+Parsing module <sparc_ifu_thrcmpl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_swpla.v" into library work
+Parsing module <sparc_ifu_swpla>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_rndrob.v" into library work
+Parsing module <sparc_ifu_rndrob>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_par34.v" into library work
+Parsing module <sparc_ifu_par34>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_par32.v" into library work
+Parsing module <sparc_ifu_par32>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_par16.v" into library work
+Parsing module <sparc_ifu_par16>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_milfsm.v" into library work
+Parsing verilog file "ifu.tmp.h" included at line 34.
+Parsing verilog file "iop.h" included at line 35.
+Parsing module <sparc_ifu_milfsm>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_lru4.v" into library work
+Parsing module <sparc_ifu_lru4>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_lfsr5.v" into library work
+Parsing module <sparc_ifu_lfsr5>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_incr46.v" into library work
+Parsing module <sparc_ifu_incr46>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_esl.v" into library work
+Parsing module <sparc_ifu_esl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_ctr5.v" into library work
+Parsing module <sparc_ifu_ctr5>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_cmp35.v" into library work
+Parsing module <sparc_ifu_cmp35>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ffu_part_add32.v" into library work
+Parsing module <sparc_ffu_part_add32>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ffu_ctl_visctl.v" into library work
+Parsing module <sparc_ffu_ctl_visctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_rml_inc3.v" into library work
+Parsing module <sparc_exu_rml_inc3>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_rml_cwp.v" into library work
+Parsing module <sparc_exu_rml_cwp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_reg.v" into library work
+Parsing verilog file "sys.h" included at line 22.
+Parsing module <sparc_exu_reg>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_ecl_wb.v" into library work
+Parsing module <sparc_exu_ecl_wb>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_ecl_mdqctl.v" into library work
+Parsing module <sparc_exu_ecl_mdqctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_ecl_eccctl.v" into library work
+Parsing module <sparc_exu_ecl_eccctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_ecl_divcntl.v" into library work
+Parsing module <sparc_exu_ecl_divcntl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_eclccr.v" into library work
+Parsing verilog file "sys.h" included at line 28.
+Parsing module <sparc_exu_eclccr>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_eclbyplog_rs1.v" into library work
+Parsing module <sparc_exu_eclbyplog_rs1>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_eclbyplog.v" into library work
+Parsing module <sparc_exu_eclbyplog>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_ecc_dec.v" into library work
+Parsing module <sparc_exu_ecc_dec>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_div_yreg.v" into library work
+Parsing verilog file "sys.h" included at line 29.
+Parsing module <sparc_exu_div_yreg>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_div_32eql.v" into library work
+Parsing module <sparc_exu_div_32eql>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_byp_eccgen.v" into library work
+Parsing module <sparc_exu_byp_eccgen>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_alu_16eql.v" into library work
+Parsing module <sparc_exu_alu_16eql>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_aluzcmp64.v" into library work
+Parsing module <sparc_exu_aluzcmp64>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_alulogic.v" into library work
+Parsing module <sparc_exu_alulogic>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_aluaddsub.v" into library work
+Parsing module <sparc_exu_aluaddsub>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/mul64.v" into library work
+Parsing module <mul64>.
+Parsing module <mul_array1>.
+Parsing module <mul_array2>.
+Parsing module <mul_csa32>.
+Parsing module <mul_csa42>.
+Parsing module <mul_ha>.
+Parsing module <mul_negen>.
+Parsing module <mul_ppgen3lsb4>.
+Parsing module <mul_ppgen3sign>.
+Parsing module <mul_ppgen3>.
+Parsing module <mul_ppgenrow3>.
+Parsing module <mul_ppgensign>.
+Parsing module <mul_ppgen>.
+Parsing module <mul_mux2>.
+Parsing module <mul_booth>.
+Parsing module <mul_bodec>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/m1.beh.v" into library work
+Parsing module <zznor64_32>.
+Parsing module <zzor36>.
+Parsing module <zzor32>.
+Parsing module <zznor24>.
+Parsing module <zznor16>.
+Parsing module <zzor8>.
+Parsing module <zzadd13>.
+Parsing module <zzadd56>.
+Parsing module <zzadd48>.
+Parsing module <zzadd34c>.
+Parsing module <zzadd32>.
+Parsing module <zzadd18>.
+Parsing module <zzadd8>.
+Parsing module <zzadd32op4>.
+Parsing module <zzadd64>.
+Parsing module <zzadd32v>.
+Parsing module <zzinc64>.
+Parsing module <zzinc48>.
+Parsing module <zzinc32>.
+Parsing module <zzecc_exu_chkecc2>.
+Parsing module <zzecc_sctag_24b_gen>.
+Parsing module <zzecc_sctag_30b_cor>.
+Parsing module <zzecc_sctag_ecc39>.
+Parsing module <zzecc_sctag_pgen_32b>.
+Parsing module <zzpar34>.
+Parsing module <zzpar32>.
+Parsing module <zzpar28>.
+Parsing module <zzpar16>.
+Parsing module <zzpar8>.
+Parsing module <zzpenc64>.
+Parsing module <zzbufh_60x4>.
+Parsing module <zzadd64_lv>.
+Parsing module <zzpar8_lv>.
+Parsing module <zzpar32_lv>.
+Parsing module <zznor64_32_lv>.
+Parsing module <zzpenc64_lv>.
+Parsing module <zzor36_lv>.
+Parsing module <zzpar34_lv>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_rrobin_picker2.v" into library work
+Parsing verilog file "sys.h" included at line 30.
+Parsing module <lsu_rrobin_picker2>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_pcx_qmon.v" into library work
+Parsing verilog file "sys.h" included at line 29.
+Parsing module <lsu_pcx_qmon>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_dc_parity_gen.v" into library work
+Parsing module <lsu_dc_parity_gen>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_dcache_lfsr.v" into library work
+Parsing module <lsu_dcache_lfsr>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_asi_decode.v" into library work
+Parsing verilog file "sys.h" included at line 29.
+Parsing verilog file "define.vh" included at line 33.
+Parsing module <lsu_asi_decode>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_in2_gt_in1_frac.v" into library work
+Parsing module <fpu_in2_gt_in1_frac>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_denorm_frac.v" into library work
+Parsing module <fpu_denorm_frac>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_cnt_lead0_64b.v" into library work
+Parsing module <fpu_cnt_lead0_64b>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_cnt_lead0_53b.v" into library work
+Parsing module <fpu_cnt_lead0_53b>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_irf.v" into library work
+Parsing verilog file "define.vh" included at line 37.
+Parsing module <bw_r_irf>.
+Parsing module <bw_r_irf_core>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_tdp.v" into library work
+Parsing verilog file "sys.h" included at line 29.
+Parsing verilog file "tlu.h" included at line 35.
+Parsing verilog file "define.vh" included at line 36.
+Parsing module <tlu_tdp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_tcl.v" into library work
+Parsing verilog file "tlu.h" included at line 30.
+Parsing module <tlu_tcl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_pib.v" into library work
+Parsing verilog file "sys.h" included at line 31.
+Parsing verilog file "tlu.h" included at line 34.
+Parsing module <tlu_pib>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_mmu_dp.v" into library work
+Parsing verilog file "sys.h" included at line 29.
+Parsing verilog file "tlu.h" included at line 36.
+Parsing verilog file "define.vh" included at line 39.
+Parsing module <tlu_mmu_dp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_mmu_ctl.v" into library work
+Parsing verilog file "sys.h" included at line 29.
+Parsing verilog file "define.vh" included at line 32.
+Parsing verilog file "lsu.tmp.h" included at line 33.
+Parsing module <tlu_mmu_ctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_misctl.v" into library work
+Parsing verilog file "sys.h" included at line 31.
+Parsing verilog file "tlu.h" included at line 34.
+Parsing module <tlu_misctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_incr64.v" into library work
+Parsing verilog file "sys.h" included at line 29.
+Parsing module <tlu_incr64>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_hyperv.v" into library work
+Parsing verilog file "sys.h" included at line 30.
+Parsing verilog file "tlu.h" included at line 33.
+Parsing module <tlu_hyperv>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l1i_val.v" into library work
+Parsing verilog file "ifu.tmp.h" included at line 65.
+Parsing verilog file "define.vh" included at line 66.
+Parsing module <sram_l1i_val>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l1d_val.v" into library work
+Parsing verilog file "define.vh" included at line 65.
+Parsing verilog file "lsu.tmp.h" included at line 66.
+Parsing module <sram_l1d_val>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_tlu_intdp.v" into library work
+Parsing verilog file "sys.h" included at line 39.
+Parsing verilog file "iop.h" included at line 40.
+Parsing verilog file "tlu.h" included at line 45.
+Parsing module <sparc_tlu_intdp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_tlu_intctl.v" into library work
+Parsing verilog file "iop.h" included at line 36.
+Parsing verilog file "tlu.h" included at line 44.
+Parsing module <sparc_tlu_intctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_mul_dp.v" into library work
+Parsing module <sparc_mul_dp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_mul_cntl.v" into library work
+Parsing module <sparc_mul_cntl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_wseldp.v" into library work
+Parsing module <sparc_ifu_wseldp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_swl.v" into library work
+Parsing verilog file "ifu.tmp.h" included at line 31.
+Parsing verilog file "define.vh" included at line 32.
+Parsing module <sparc_ifu_swl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_sscan.v" into library work
+Parsing verilog file "define.vh" included at line 23.
+Parsing module <sparc_ifu_sscan>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_invctl.v" into library work
+Parsing verilog file "iop.h" included at line 34.
+Parsing verilog file "ifu.tmp.h" included at line 35.
+Parsing module <sparc_ifu_invctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_imd.v" into library work
+Parsing module <sparc_ifu_imd>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_ifqdp.v" into library work
+Parsing verilog file "iop.h" included at line 42.
+Parsing verilog file "ifu.tmp.h" included at line 43.
+Parsing verilog file "define.vh" included at line 44.
+Parsing module <sparc_ifu_ifqdp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_ifqctl.v" into library work
+Parsing verilog file "iop.h" included at line 32.
+Parsing verilog file "ifu.tmp.h" included at line 33.
+Parsing module <sparc_ifu_ifqctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_fdp.v" into library work
+Parsing verilog file "sys.h" included at line 36.
+Parsing verilog file "ifu.tmp.h" included at line 37.
+Parsing verilog file "define.vh" included at line 38.
+Parsing module <sparc_ifu_fdp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_fcl.v" into library work
+Parsing verilog file "ifu.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <sparc_ifu_fcl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_errdp.tmp.v" into library work
+Parsing verilog file "sys.h" included at line 32.
+Parsing verilog file "lsu.tmp.h" included at line 33.
+Parsing verilog file "ifu.tmp.h" included at line 34.
+Parsing module <sparc_ifu_errdp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_errctl.v" into library work
+Parsing verilog file "lsu.tmp.h" included at line 30.
+Parsing module <sparc_ifu_errctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_dec.v" into library work
+Parsing module <sparc_ifu_dec>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_dcl.v" into library work
+Parsing verilog file "sys.h" included at line 36.
+Parsing module <sparc_ifu_dcl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ffu_vis.v" into library work
+Parsing module <sparc_ffu_vis>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ffu_dp.v" into library work
+Parsing verilog file "iop.h" included at line 29.
+Parsing verilog file "sys.h" included at line 30.
+Parsing module <sparc_ffu_dp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ffu_ctl.v" into library work
+Parsing verilog file "iop.h" included at line 28.
+Parsing module <sparc_ffu_ctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_shft.v" into library work
+Parsing module <sparc_exu_shft>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_rml.v" into library work
+Parsing verilog file "sys.h" included at line 40.
+Parsing module <sparc_exu_rml>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_ecl.v" into library work
+Parsing module <sparc_exu_ecl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_ecc.v" into library work
+Parsing module <sparc_exu_ecc>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_div.v" into library work
+Parsing module <sparc_exu_div>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_byp.v" into library work
+Parsing module <sparc_exu_byp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_alu.v" into library work
+Parsing verilog file "lsu.tmp.h" included at line 27.
+Parsing module <sparc_exu_alu>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/one_of_five.v" into library work
+Parsing module <one_of_five>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_tlbdp.v" into library work
+Parsing verilog file "lsu.tmp.h" included at line 23.
+Parsing verilog file "define.vh" included at line 24.
+Parsing module <lsu_tlbdp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_tagdp.tmp.v" into library work
+Parsing verilog file "lsu.tmp.h" included at line 24.
+Parsing module <lsu_tagdp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_stb_rwdp.v" into library work
+Parsing verilog file "sys.h" included at line 30.
+Parsing verilog file "iop.h" included at line 33.
+Parsing module <lsu_stb_rwdp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_stb_rwctl.v" into library work
+Parsing verilog file "sys.h" included at line 29.
+Parsing verilog file "iop.h" included at line 32.
+Parsing module <lsu_stb_rwctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_stb_ctldp.v" into library work
+Parsing module <lsu_stb_ctldp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_stb_ctl.v" into library work
+Parsing verilog file "sys.h" included at line 30.
+Parsing verilog file "iop.h" included at line 33.
+Parsing module <lsu_stb_ctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_qdp2.v" into library work
+Parsing verilog file "sys.h" included at line 30.
+Parsing verilog file "iop.h" included at line 32.
+Parsing verilog file "lsu.tmp.h" included at line 34.
+Parsing module <lsu_qdp2>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_qdp1.v" into library work
+Parsing verilog file "sys.h" included at line 29.
+Parsing verilog file "iop.h" included at line 31.
+Parsing verilog file "lsu.tmp.h" included at line 32.
+Parsing verilog file "ifu.tmp.h" included at line 33.
+Parsing verilog file "define.vh" included at line 34.
+Parsing module <lsu_qdp1>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_qctl2.tmp.v" into library work
+Parsing verilog file "sys.h" included at line 36.
+Parsing verilog file "iop.h" included at line 38.
+Parsing verilog file "lsu.tmp.h" included at line 40.
+Parsing module <lsu_qctl2>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_qctl1.v" into library work
+Parsing verilog file "sys.h" included at line 32.
+Parsing verilog file "iop.h" included at line 34.
+Parsing verilog file "lsu.tmp.h" included at line 36.
+Parsing module <lsu_qctl1>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_excpctl.v" into library work
+Parsing verilog file "sys.h" included at line 24.
+Parsing verilog file "lsu.tmp.h" included at line 25.
+Parsing module <lsu_excpctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_dctldp.v" into library work
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "lsu.tmp.h" included at line 30.
+Parsing module <lsu_dctldp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_dctl.tmp.v" into library work
+Parsing verilog file "sys.h" included at line 35.
+Parsing verilog file "define.vh" included at line 37.
+Parsing verilog file "lsu.tmp.h" included at line 42.
+Parsing module <lsu_dctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_dcdp.tmp.v" into library work
+Parsing verilog file "sys.h" included at line 36.
+Parsing verilog file "lsu.tmp.h" included at line 38.
+Parsing module <lsu_dcdp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15_priority_encoder.tmp.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 43.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing verilog file "define.vh" included at line 44.
+Parsing module <l15_priority_encoder_1>.
+Parsing module <l15_priority_encoder_2>.
+Parsing module <l15_priority_encoder_3>.
+Parsing module <l15_priority_encoder_4>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_rptr_min_global.v" into library work
+Parsing module <fpu_bufrpt_grp4>.
+Parsing module <fpu_rptr_fp_cpx_grp16>.
+Parsing module <fpu_rptr_pcx_fpio_grp16>.
+Parsing module <fpu_rptr_inq>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_rptr_macros.v" into library work
+Parsing module <fpu_bufrpt_grp64>.
+Parsing module <fpu_bufrpt_grp32>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_out_dp.v" into library work
+Parsing module <fpu_out_dp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_out_ctl.v" into library work
+Parsing module <fpu_out_ctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_mul_frac_dp.v" into library work
+Parsing module <fpu_mul_frac_dp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_mul_exp_dp.v" into library work
+Parsing module <fpu_mul_exp_dp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_mul_ctl.v" into library work
+Parsing module <fpu_mul_ctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_in_dp.v" into library work
+Parsing module <fpu_in_dp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_in_ctl.v" into library work
+Parsing module <fpu_in_ctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_div_frac_dp.v" into library work
+Parsing module <fpu_div_frac_dp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_div_exp_dp.v" into library work
+Parsing module <fpu_div_exp_dp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_div_ctl.v" into library work
+Parsing module <fpu_div_ctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_add_frac_dp.v" into library work
+Parsing module <fpu_add_frac_dp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_add_exp_dp.v" into library work
+Parsing module <fpu_add_exp_dp>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_add_ctl.v" into library work
+Parsing module <fpu_add_ctl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_input_route_request_calc.v" into library work
+Parsing verilog file "network_define.v" included at line 39.
+Parsing module <dynamic_input_route_request_calc>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_scm.v" into library work
+Parsing verilog file "define.vh" included at line 58.
+Parsing module <bw_r_scm>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_rf32x80.v" into library work
+Parsing module <bw_r_rf32x80_ref>.
+Parsing module <bw_r_rf32x80>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_rf32x152b.v" into library work
+Parsing module <bw_r_rf32x152b>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_rf16x160.v" into library work
+Parsing module <bw_r_rf16x160_ref>.
+Parsing module <bw_r_rf16x160>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_itlb.tmp.v" into library work
+Parsing verilog file "sys.h" included at line 32.
+Parsing verilog file "lsu.tmp.h" included at line 38.
+Parsing verilog file "ifu.tmp.h" included at line 39.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <bw_r_itlb>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_irf_wrap.v" into library work
+Parsing verilog file "define.vh" included at line 28.
+Parsing module <bw_r_irf_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_ict.tmp.v" into library work
+Parsing verilog file "ifu.tmp.h" included at line 47.
+Parsing verilog file "define.vh" included at line 48.
+Parsing module <bw_r_ict>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_icd.v" into library work
+Parsing verilog file "ifu.tmp.h" included at line 53.
+Parsing verilog file "define.vh" included at line 54.
+Parsing module <bw_r_icd_orig>.
+Parsing module <bw_r_icd>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_frf.v" into library work
+Parsing verilog file "define.vh" included at line 46.
+Parsing module <bw_r_frf>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_dtlb.tmp.v" into library work
+Parsing verilog file "sys.h" included at line 32.
+Parsing verilog file "lsu.tmp.h" included at line 38.
+Parsing verilog file "define.vh" included at line 41.
+Parsing module <bw_r_dtlb>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_dct.tmp.v" into library work
+Parsing verilog file "define.vh" included at line 48.
+Parsing verilog file "lsu.tmp.h" included at line 49.
+Parsing module <bw_r_dct>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bw_r_dcd.tmp.v" into library work
+Parsing verilog file "lsu.tmp.h" included at line 48.
+Parsing verilog file "define.vh" included at line 49.
+Parsing module <bw_r_dcd>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu.v" into library work
+Parsing verilog file "sys.h" included at line 36.
+Parsing verilog file "tlu.h" included at line 39.
+Parsing verilog file "lsu.tmp.h" included at line 40.
+Parsing verilog file "define.vh" included at line 41.
+Parsing module <tlu>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/test_stub_scan.v" into library work
+Parsing module <test_stub_scan>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l2_tag.tmp.v" into library work
+Parsing verilog file "define.vh" included at line 34.
+Parsing verilog file "l2.tmp.h" included at line 35.
+Parsing module <sram_l2_tag>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l2_state.tmp.v" into library work
+Parsing verilog file "define.vh" included at line 34.
+Parsing verilog file "l2.tmp.h" included at line 35.
+Parsing module <sram_l2_state>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l2_dir.tmp.v" into library work
+Parsing verilog file "define.vh" included at line 34.
+Parsing verilog file "l2.tmp.h" included at line 35.
+Parsing module <sram_l2_dir>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l2_data.tmp.v" into library work
+Parsing verilog file "define.vh" included at line 34.
+Parsing verilog file "l2.tmp.h" included at line 35.
+Parsing module <sram_l2_data>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_mul_top.v" into library work
+Parsing module <sparc_mul_top>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu.v" into library work
+Parsing verilog file "sys.h" included at line 32.
+Parsing verilog file "iop.h" included at line 33.
+Parsing verilog file "ifu.tmp.h" included at line 34.
+Parsing verilog file "lsu.tmp.h" included at line 35.
+Parsing verilog file "define.vh" included at line 37.
+Parsing module <sparc_ifu>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ffu.v" into library work
+Parsing verilog file "iop.h" included at line 30.
+Parsing verilog file "define.vh" included at line 31.
+Parsing module <sparc_ffu>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu.v" into library work
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "lsu.tmp.h" included at line 30.
+Parsing module <sparc_exu>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/space_avail_top.v" into library work
+Parsing module <space_avail_top>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/network_input_blk_multi_out.v" into library work
+Parsing verilog file "network_define.v" included at line 30.
+Parsing module <network_input_blk_multi_out>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu.v" into library work
+Parsing verilog file "sys.h" included at line 29.
+Parsing verilog file "iop.h" included at line 32.
+Parsing verilog file "lsu.tmp.h" included at line 33.
+Parsing verilog file "ifu.tmp.h" included at line 34.
+Parsing verilog file "define.vh" included at line 36.
+Parsing module <lsu>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_priority_encoder.tmp.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 42.
+Parsing verilog file "define.vh" included at line 43.
+Parsing module <l2_priority_encoder_1>.
+Parsing module <l2_priority_encoder_2>.
+Parsing module <l2_priority_encoder_3>.
+Parsing module <l2_priority_encoder_4>.
+Parsing module <l2_priority_encoder_5>.
+Parsing module <l2_priority_encoder_6>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_data_pgen.tmp.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_data_pgen>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_data_ecc.tmp.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_data_ecc>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15_home_encoder.tmp.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 43.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing verilog file "define.vh" included at line 44.
+Parsing module <l15_home_encoder>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15_hmc.tmp.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 42.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing verilog file "define.vh" included at line 43.
+Parsing module <l15_hmc>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_rptr_groups.v" into library work
+Parsing module <fpu_rptr_groups>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_out.v" into library work
+Parsing module <fpu_out>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_mul.v" into library work
+Parsing module <fpu_mul>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_in.v" into library work
+Parsing module <fpu_in>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_div.v" into library work
+Parsing module <fpu_div>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_add.v" into library work
+Parsing module <fpu_add>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/flat_id_to_xy.tmp.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 28.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing verilog file "define.vh" included at line 29.
+Parsing module <flat_id_to_xy>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_output_datapath.v" into library work
+Parsing verilog file "network_define.v" included at line 36.
+Parsing module <dynamic_output_datapath>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_output_control.v" into library work
+Parsing verilog file "network_define.v" included at line 39.
+Parsing module <dynamic_output_control>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_input_control.v" into library work
+Parsing verilog file "network_define.v" included at line 42.
+Parsing module <dynamic_input_control>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/ucb_bus_out.v" into library work
+Parsing verilog file "sys.h" included at line 32.
+Parsing module <ucb_bus_out>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/ucb_bus_in.v" into library work
+Parsing verilog file "sys.h" included at line 32.
+Parsing module <ucb_bus_in>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_nospu_wrap.v" into library work
+Parsing verilog file "sys.h" included at line 28.
+Parsing verilog file "tlu.h" included at line 29.
+Parsing verilog file "define.vh" included at line 30.
+Parsing verilog file "lsu.tmp.h" included at line 31.
+Parsing module <tlu_nospu_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l15_tag.tmp.v" into library work
+Parsing verilog file "define.vh" included at line 34.
+Parsing verilog file "l15.tmp.h" included at line 35.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing module <sram_l15_tag>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l15_hmt.tmp.v" into library work
+Parsing verilog file "define.vh" included at line 34.
+Parsing verilog file "l15.tmp.h" included at line 35.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing module <sram_l15_hmt>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sram_l15_data.tmp.v" into library work
+Parsing verilog file "define.vh" included at line 34.
+Parsing verilog file "l15.tmp.h" included at line 35.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing module <sram_l15_data>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_mul_top_nospu_wrap.v" into library work
+Parsing module <sparc_mul_top_nospu_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ifu_nospu_wrap.v" into library work
+Parsing verilog file "sys.h" included at line 28.
+Parsing verilog file "iop.h" included at line 29.
+Parsing verilog file "ifu.tmp.h" included at line 30.
+Parsing verilog file "lsu.tmp.h" included at line 31.
+Parsing verilog file "define.vh" included at line 32.
+Parsing module <sparc_ifu_nospu_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_ffu_nospu_wrap.v" into library work
+Parsing verilog file "define.vh" included at line 28.
+Parsing module <sparc_ffu_nospu_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_exu_wrap.v" into library work
+Parsing verilog file "define.vh" included at line 28.
+Parsing verilog file "lsu.tmp.h" included at line 29.
+Parsing module <sparc_exu_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/simplenocbuffer.v" into library work
+Parsing verilog file "iop.h" included at line 40.
+Parsing verilog file "l15.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing module <simplenocbuffer>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/rf_l15_wmt.tmp.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 47.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing verilog file "lsu.tmp.h" included at line 48.
+Parsing module <rf_l15_wmt>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/rf_l15_mesi.tmp.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 49.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing module <rf_l15_mesi>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/rf_l15_lruarray.tmp.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 44.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing module <rf_l15_lruarray>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/pcx_decoder.v" into library work
+Parsing verilog file "iop.h" included at line 40.
+Parsing verilog file "define.vh" included at line 41.
+Parsing verilog file "l15.tmp.h" included at line 42.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing module <pcx_decoder>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/pcx_buffer.v" into library work
+Parsing verilog file "iop.h" included at line 40.
+Parsing verilog file "define.vh" included at line 41.
+Parsing module <pcx_buffer>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/one_of_eight.v" into library work
+Parsing module <one_of_eight>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/noc3encoder.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <noc3encoder>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/noc3buffer.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <noc3buffer>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/noc2decoder.v" into library work
+Parsing verilog file "iop.h" included at line 40.
+Parsing verilog file "l15.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing module <noc2decoder>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/noc1encoder.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <noc1encoder>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/noc1buffer.tmp.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing module <noc1buffer>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/net_dff.v" into library work
+Parsing module <net_dff>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/lsu_nospu_wrap.v" into library work
+Parsing verilog file "sys.h" included at line 28.
+Parsing verilog file "iop.h" included at line 29.
+Parsing verilog file "ifu.tmp.h" included at line 30.
+Parsing verilog file "lsu.tmp.h" included at line 31.
+Parsing verilog file "define.vh" included at line 32.
+Parsing module <lsu_nospu_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_tag.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_tag>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_state.tmp.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_state>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_smc.tmp.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_smc>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe2_dpath.tmp.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 42.
+Parsing verilog file "define.vh" included at line 43.
+Parsing module <l2_pipe2_dpath>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe2_ctrl.tmp.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 42.
+Parsing verilog file "define.vh" included at line 43.
+Parsing module <l2_pipe2_ctrl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe2_buf_in.tmp.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_pipe2_buf_in>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe1_dpath.tmp.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 42.
+Parsing verilog file "define.vh" included at line 43.
+Parsing module <l2_pipe1_dpath>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe1_ctrl.tmp.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_pipe1_ctrl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe1_buf_out.tmp.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_pipe1_buf_out>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe1_buf_in.tmp.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_pipe1_buf_in>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_mshr_decoder.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 42.
+Parsing verilog file "define.vh" included at line 43.
+Parsing module <l2_mshr_decoder>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_mshr.tmp.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_mshr>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_encoder.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 42.
+Parsing verilog file "define.vh" included at line 43.
+Parsing module <l2_encoder>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_dir.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_dir>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_decoder.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_decoder>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_data.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_data>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_broadcast_counter.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_broadcast_counter>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15_pipeline.tmp.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 43.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing verilog file "lsu.tmp.h" included at line 44.
+Parsing module <l15_pipeline>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15_mshr.tmp.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 43.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing module <l15_mshr>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15_csm.tmp.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 43.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing verilog file "define.vh" included at line 44.
+Parsing module <l15_csm>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15_cpxencoder.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 48.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing module <l15_cpxencoder>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_buf.v" into library work
+Parsing module <fpu_buf>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu.v" into library work
+Parsing module <fpu>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/flip_bus.v" into library work
+Parsing module <flip_bus>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_output_top.v" into library work
+Parsing verilog file "network_define.v" included at line 37.
+Parsing module <dynamic_output_top>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_input_top_4.v" into library work
+Parsing verilog file "network_define.v" included at line 36.
+Parsing module <dynamic_input_top_4>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_input_top_16.v" into library work
+Parsing verilog file "network_define.v" included at line 36.
+Parsing module <dynamic_input_top_16>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/cpx_spc_rpt.v" into library work
+Parsing verilog file "sys.h" included at line 22.
+Parsing verilog file "iop.h" included at line 23.
+Parsing verilog file "ifu.tmp.h" included at line 24.
+Parsing verilog file "lsu.tmp.h" included at line 25.
+Parsing module <cpx_spc_rpt>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/cpx_spc_buf.v" into library work
+Parsing verilog file "sys.h" included at line 22.
+Parsing verilog file "iop.h" included at line 23.
+Parsing verilog file "ifu.tmp.h" included at line 24.
+Parsing module <cpx_spc_buf>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/cfg_asi.v" into library work
+Parsing verilog file "define.vh" included at line 27.
+Parsing module <cfg_asi>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/bus_compare_equal.v" into library work
+Parsing module <bus_compare_equal>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sync_fifo.v" into library work
+Parsing module <sync_fifo>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/synchronizer.v" into library work
+Parsing module <synchronizer>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc.v" into library work
+Parsing verilog file "sys.h" included at line 22.
+Parsing verilog file "iop.h" included at line 23.
+Parsing verilog file "ifu.tmp.h" included at line 24.
+Parsing verilog file "tlu.h" included at line 25.
+Parsing verilog file "lsu.tmp.h" included at line 26.
+Parsing verilog file "define.vh" included at line 27.
+Parsing module <sparc>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/rtap_ucb_transmitter.v" into library work
+Parsing verilog file "define.vh" included at line 40.
+Parsing verilog file "jtag.vh" included at line 41.
+Parsing module <rtap_ucb_transmitter>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/rtap_ucb_receiver.v" into library work
+Parsing verilog file "define.vh" included at line 39.
+Parsing verilog file "jtag.vh" included at line 40.
+Parsing module <rtap_ucb_receiver>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_tag_wrap.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_tag_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_state_wrap.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_state_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_smc_wrap.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_smc_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe2.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 42.
+Parsing verilog file "define.vh" included at line 43.
+Parsing module <l2_pipe2>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_pipe1.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 42.
+Parsing verilog file "define.vh" included at line 43.
+Parsing module <l2_pipe1>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_mshr_wrap.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 42.
+Parsing verilog file "define.vh" included at line 43.
+Parsing module <l2_mshr_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_dir_wrap.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_dir_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_data_wrap.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 42.
+Parsing verilog file "define.vh" included at line 43.
+Parsing module <l2_data_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_config_regs.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_config_regs>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2_broadcast_counter_wrap.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2_broadcast_counter_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 43.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing verilog file "lsu.tmp.h" included at line 44.
+Parsing module <l15>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/jtag_interface_tap.v" into library work
+Parsing verilog file "sys.h" included at line 25.
+Parsing verilog file "jtag.vh" included at line 27.
+Parsing module <jtag_interface_tap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_arb.v" into library work
+Parsing module <fpu_arb>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpga_net_chooser_32.v" into library work
+Parsing module <bridge_network_chooser_32>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_node_top.v" into library work
+Parsing verilog file "define.vh" included at line 31.
+Parsing module <dynamic_node_top>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/async_fifo.v" into library work
+Parsing module <async_fifo>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/valrdy_to_credit.v" into library work
+Parsing verilog file "network_define.v" included at line 39.
+Parsing module <valrdy_to_credit>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_core.v" into library work
+Parsing verilog file "iop.h" included at line 28.
+Parsing verilog file "define.vh" included at line 29.
+Parsing module <sparc_core>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/rtap.v" into library work
+Parsing verilog file "define.vh" included at line 39.
+Parsing verilog file "jtag.vh" included at line 40.
+Parsing module <rtap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/mem_io_splitter.v" into library work
+Parsing verilog file "define.vh" included at line 44.
+Parsing verilog file "chipset_define.vh" included at line 45.
+Parsing module <mem_io_splitter>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l2.v" into library work
+Parsing verilog file "l2.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 42.
+Parsing module <l2>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l15_wrap.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 30.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing module <l15_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/jtag_ucb_transmitter.v" into library work
+Parsing verilog file "define.vh" included at line 39.
+Parsing verilog file "jtag.vh" included at line 40.
+Parsing module <jtag_ucb_transmitter>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/jtag_ucb_receiver.v" into library work
+Parsing verilog file "define.vh" included at line 39.
+Parsing verilog file "jtag.vh" included at line 40.
+Parsing module <jtag_ucb_receiver>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/jtag_interface.v" into library work
+Parsing verilog file "define.vh" included at line 41.
+Parsing verilog file "jtag.vh" included at line 42.
+Parsing module <jtag_interface>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/jtag_ctap.v" into library work
+Parsing verilog file "define.vh" included at line 39.
+Parsing verilog file "jtag.vh" included at line 40.
+Parsing module <jtag_ctap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpu_arb_wrap.v" into library work
+Parsing module <fpu_arb_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpga_bridge_send_32.v" into library work
+Parsing verilog file "chip_net_chooser_32.v" included at line 45.
+Parsing module <bridge_network_chooser>.
+Parsing module <fpga_bridge_send_32>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpga_bridge_rcv_32.v" into library work
+Parsing module <fpga_bridge_rcv_32>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dynamic_node_top_wrap.v" into library work
+Parsing verilog file "define.vh" included at line 41.
+Parsing module <dynamic_node_top_wrap>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/dmbr.tmp.v" into library work
+Parsing verilog file "dmbr_define.v" included at line 28.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "l15.tmp.h" included at line 30.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing module <dmbr>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/credit_to_valrdy.v" into library work
+Parsing verilog file "network_define.v" included at line 35.
+Parsing module <credit_to_valrdy>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/cpx_arbitrator.v" into library work
+Parsing verilog file "iop.h" included at line 29.
+Parsing module <cpx_arbitrator>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/config_regs.tmp.v" into library work
+Parsing verilog file "l15.tmp.h" included at line 41.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing verilog file "define.vh" included at line 42.
+Parsing verilog file "dmbr_define.v" included at line 43.
+Parsing module <config_regs>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/clk_gating_latch.v" into library work
+Parsing module <clk_gating_latch>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/chip_bridge_send_32.v" into library work
+Parsing verilog file "piton_system.vh" included at line 37.
+Parsing module <chip_bridge_out>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/chip_bridge_rcv_32.v" into library work
+Parsing verilog file "piton_system.vh" included at line 37.
+Parsing module <chip_bridge_in>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tile.tmp.v" into library work
+Parsing verilog file "define.vh" included at line 22.
+Parsing verilog file "dmbr_define.v" included at line 23.
+Parsing verilog file "l15.tmp.h" included at line 24.
+Parsing verilog file "define.vh" included at line 29.
+Parsing verilog file "iop.h" included at line 30.
+Parsing verilog file "jtag.vh" included at line 25.
+Parsing module <tile>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/OCI.v" into library work
+Parsing verilog file "define.vh" included at line 30.
+Parsing module <OCI>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/jtag.v" into library work
+Parsing verilog file "define.vh" included at line 45.
+Parsing verilog file "jtag.vh" included at line 46.
+Parsing module <jtag>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/fpga_bridge.v" into library work
+Parsing verilog file "define.vh" included at line 30.
+Parsing module <fpga_bridge>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/chip_bridge.v" into library work
+Parsing module <chip_bridge>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/chipset_impl.v" into library work
+Parsing verilog file "define.vh" included at line 26.
+Parsing verilog file "piton_system.vh" included at line 27.
+Parsing verilog file "mc_define.h" included at line 28.
+Parsing verilog file "uart16550_define.vh" included at line 29.
+Parsing verilog file "chipset_define.vh" included at line 30.
+Parsing module <chipset_impl>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tlu_mon.v" into library work
+Parsing verilog file "cross_module.tmp.h" included at line 31.
+Parsing module <tlu_mon>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/thrfsm_mon.v" into library work
+Parsing verilog file "ifu.tmp.h" included at line 22.
+Parsing verilog file "cross_module.tmp.h" included at line 23.
+Parsing module <thrfsm_mon>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/stb_ovfl_mon.v" into library work
+Parsing verilog file "ifu.tmp.h" included at line 30.
+Parsing verilog file "cross_module.tmp.h" included at line 31.
+Parsing module <stb_ovfl_mon>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/softint_mon.v" into library work
+Parsing verilog file "cross_module.tmp.h" included at line 31.
+Parsing module <softint_mon>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/pc_muxsel_mon.v" into library work
+Parsing verilog file "ifu.tmp.h" included at line 30.
+Parsing verilog file "cross_module.tmp.h" included at line 31.
+Parsing module <pc_muxsel_mon>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/nukeint_mon.v" into library work
+Parsing verilog file "ifu.tmp.h" included at line 30.
+Parsing verilog file "cross_module.tmp.h" included at line 31.
+Parsing module <nukeint_mon>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/nc_inv_chk.v" into library work
+Parsing verilog file "ifu.tmp.h" included at line 29.
+Parsing verilog file "cross_module.tmp.h" included at line 30.
+Parsing module <nc_inv_chk>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/mask_mon.v" into library work
+Parsing verilog file "ifu.tmp.h" included at line 22.
+Parsing module <mask_mon>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/l_cache_mon.v" into library work
+Parsing verilog file "ifu.tmp.h" included at line 23.
+Parsing verilog file "iop.h" included at line 24.
+Parsing verilog file "cross_module.tmp.h" included at line 25.
+Parsing module <l_cache_mon>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/icache_mutex_mon.v" into library work
+Parsing verilog file "cross_module.tmp.h" included at line 27.
+Parsing verilog file "ifu.tmp.h" included at line 28.
+Parsing verilog file "lsu.tmp.h" included at line 29.
+Parsing module <icache_mutex_mon>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/exu_mon.v" into library work
+Parsing verilog file "cross_module.tmp.h" included at line 22.
+Parsing module <exu_mon>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/chipset.v" into library work
+Parsing verilog file "define.vh" included at line 26.
+Parsing verilog file "piton_system.vh" included at line 27.
+Parsing verilog file "mc_define.h" included at line 28.
+Parsing verilog file "chipset_define.vh" included at line 29.
+Parsing module <chipset>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/chip.tmp.v" into library work
+Parsing verilog file "define.vh" included at line 25.
+Parsing verilog file "piton_system.vh" included at line 26.
+Parsing verilog file "jtag.vh" included at line 27.
+Parsing module <chip>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/tso_mon.tmp.v" into library work
+Parsing verilog file "cross_module.tmp.h" included at line 38.
+Parsing verilog file "sys.h" included at line 39.
+Parsing verilog file "iop.h" included at line 40.
+Parsing verilog file "lsu.tmp.h" included at line 42.
+Parsing module <tso_mon>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/system.v" into library work
+Parsing verilog file "define.vh" included at line 33.
+Parsing verilog file "piton_system.vh" included at line 34.
+Parsing module <system>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sparc_pipe_flow.v" into library work
+Parsing verilog file "sys.h" included at line 35.
+Parsing module <sparc_pipe_flow>.
+Analyzing Verilog file "/home/dave/embedded_project/embedded_project/single_core/sas_tasks.tmp.v" into library work
+Parsing verilog file "cross_module.tmp.h" included at line 22.
+Parsing verilog file "iop.h" included at line 23.
+Parsing module <sas_tasks>.
+ERROR:HDLCompiler:1419 - "/home/dave/embedded_project/embedded_project/single_core/sas_tasks.tmp.v" Line 892: Case statement with no case item violates IEEE 1800 syntax
+INFO - You can change the severity of this error message to warning using switch -change_error_to_warning "HDLCompiler:1419"
+ERROR:HDLCompiler:1419 - "/home/dave/embedded_project/embedded_project/single_core/sas_tasks.tmp.v" Line 911: Case statement with no case item violates IEEE 1800 syntax
+INFO - You can change the severity of this error message to warning using switch -change_error_to_warning "HDLCompiler:1419"
+ERROR:HDLCompiler:598 - "/home/dave/embedded_project/embedded_project/single_core/sas_tasks.tmp.v" Line 165: Module <sas_tasks> ignored due to previous errors.
+Verilog file /home/dave/embedded_project/embedded_project/single_core/sas_tasks.tmp.v ignored due to errors
+--> 
+
+
+Total memory usage is 341644 kilobytes
+
+Number of errors   :    3 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

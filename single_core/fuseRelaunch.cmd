@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/dave/embedded_project/embedded_project/single_core/cmp_top_isim_beh.exe" -prj "/home/dave/embedded_project/embedded_project/single_core/cmp_top_beh.prj" "work.cmp_top" "work.glbl" 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1419" delta="unknown" >"/home/dave/embedded_project/embedded_project/single_core/sas_tasks.tmp.v" Line 893: Case statement with no case item violates IEEE 1800 syntax
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1419" delta="unknown" >"/home/dave/embedded_project/embedded_project/single_core/sas_tasks.tmp.v" Line 912: Case statement with no case item violates IEEE 1800 syntax
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"/home/dave/embedded_project/embedded_project/single_core/system.v" Line 433: Port <arg fmt="%s" index="1">oram_on</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"/home/dave/embedded_project/embedded_project/single_core/system.v" Line 641: Port <arg fmt="%s" index="1">chipset_prsnt_n</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"/home/dave/embedded_project/embedded_project/single_core/l2_pipe2.v" Line 271: Port <arg fmt="%s" index="1">recycled</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"/home/dave/embedded_project/embedded_project/single_core/sas_intf.v" Line 4581: Element index <arg fmt="%d" index="1">31</arg> into <arg fmt="%s" index="2">active_thread</arg> is out of bounds
+</msg>
+
+<msg type="error" file="Simulator" num="992" delta="unknown" >&quot;<arg fmt="%s" index="1">/home/dave/embedded_project/embedded_project/single_core/ciop_iob.tmp.v</arg>&quot; Line <arg fmt="%d" index="2">273</arg>. <arg fmt="%s" index="3">init_iob_model</arg> system task is not supported
+</msg>
+
+</messages>
+
