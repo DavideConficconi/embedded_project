@@ -28,6 +28,8 @@
 // Generally, if doing FPGA synth, certain things
 // are not needed or are fixed, always.  These
 // can be used for other purposes though
+
+
 `ifdef PITON_FPGA_SYNTH
     `define PITON_NO_JTAG
 `endif // endif PITON_FPGA_SYNTH

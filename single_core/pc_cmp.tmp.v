@@ -213,17 +213,15 @@ endtask // get_thread_status
         spc0_phy_pc_m   <= spc0_phy_pc_e;
         spc0_phy_pc_w   <= {{8{spc0_phy_pc_m[39]}}, spc0_phy_pc_m[39:0]};
 
-        if(spc0_inst_done &&
+        /*if(spc0_inst_done &&
                 active_thread[{3'b000,spc0_thread_id[1:0]}])begin
-            /*
                  if(0 & $x_checker(`DTUPATH0.pc_w))begin
                     $display("%0d: Detected unkown pc value spc(%d) thread(%x) value(%x)",
                          $time, 3'b000, spc0_thread_id[1:0], `DTUPATH0.pc_w);
                     `MONITOR_PATH.fail("Detected unkown pc");
                  end
-            */
         end
-    end
+   */ end
 
 
 
@@ -231,7 +229,7 @@ endtask // get_thread_status
 reg           dummy;
 
 task trap_extract;
-    reg [2048:0] pc_str;
+    /*reg [2048:0] pc_str;
     reg [63:0]  tmp_val;
     integer     i;
     begin
@@ -244,7 +242,7 @@ task trap_extract;
         if($value$plusargs("stub_mask=%h", stub_mask))    $display ("%t: stub_mask  %h", $time, stub_mask);
 
         for(i = 0; i < `NUM_TILES;i = i + 1)if(finish_mask[i] === 1'bx)finish_mask[i] = 1'b0;
-        if(sas_def)dummy = $bw_good_trap(1, finish_mask);
+        //if(sas_def)dummy = $bw_good_trap(1, finish_mask);
         for(i = 0; i < 8;i = i + 1) if(stub_mask[i] === 1'bx)stub_mask[i] = 1'b0;
 
         good_trap_count = 0;
@@ -275,7 +273,7 @@ task trap_extract;
         trap_count = good_trap_count > bad_trap_count ? good_trap_count :  bad_trap_count;
 
     end
-endtask // trap_extract
+*/endtask // trap_extract
 // deceide pass or fail
 reg [63:0]    rpc;
 integer       ind;
@@ -313,9 +311,9 @@ begin j = {i, spc0_thread_id};pc = spc0_phy_pc_w;rpc = spc0_rtl_pc;end
                     begin
                         if(good_trap[l] == pc[39:0])
                         begin
-                            if(sas_def && (good[j] == 0))
+                           /* if(sas_def && (good[j] == 0))
                                 dummy = $bw_good_trap(2, j, rpc);//command thread, pc
-
+*/
                             if(good[j] == 0)
                                 $display("Info: spc(%0x) thread(%0x) Hit Good trap", j / 4, j % 4);
 
@@ -359,7 +357,7 @@ begin j = {i, spc0_thread_id};pc = spc0_phy_pc_w;rpc = spc0_rtl_pc;end
                         if(sas_def && (good == active_thread))
                             `TOP_MOD.diag_done = 1;
 
-                        if(sas_def)
+                       /* if(sas_def)
                         begin
                             if($bw_good_trap(3, j) &&
                                     (hit_bad == 0)      &&
@@ -374,7 +372,7 @@ begin j = {i, spc0_thread_id};pc = spc0_phy_pc_w;rpc = spc0_rtl_pc;end
                                     $finish;
                                 end
                             end
-                        end
+                        end*/
                     end // for (l = 0; l < good_trap_count; l = l + 1)
                 end // if (active_thread[j])
             end // if (cpu[i])
@@ -441,7 +439,7 @@ endtask // check_time
 //check good trap status after threads hit the good trap.
 //The reason for this is that the threads stay on halt status.
 task check_good;
-    begin
+   /* begin
         if($bw_good_trap(3, 0) && (hit_bad == 0))begin
             `TOP_MOD.diag_done = 1;
             if(!`TOP_MOD.fail_flag)begin
@@ -452,7 +450,7 @@ task check_good;
             end
         end
     end
-endtask // check_good
+*/endtask // check_good
 
 //deceide whether stub done or not.
 task check_stub;
@@ -469,7 +467,7 @@ task check_stub;
                 `MONITOR_PATH.fail("HIT BAD TRAP");
             end
         end
-        if (sas_def) begin
+/*        if (sas_def) begin
             if(stub_mask                &&
                     (stub_mask == stub_good) &&
                     (active_thread && $bw_good_trap(3, 0)   ||
@@ -481,7 +479,7 @@ task check_stub;
                 $finish;
             end
         end
-        else if ((good == finish_mask) && (stub_mask == stub_good)) begin
+        else */if ((good == finish_mask) && (stub_mask == stub_good)) begin
             `TOP_MOD.diag_done = 1;
             @(posedge clk);
             $display("Info->Simulation terminated by stub.");

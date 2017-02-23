@@ -270,7 +270,7 @@ begin
     fake_iob_out_req   = 0;
     fake_iob_out_data  = 0;
 
-	$init_iob_model();
+//	$init_iob_model();
 end
 
 // cmp clock domain
@@ -280,7 +280,7 @@ always @(negedge `CHIP.clk_muxed)
 begin
     if(ok_iob)
     begin
-        $iob_cdriver(//input to pli
+/*        $iob_cdriver(//input to pli
             //pcx packet from core
             pcx_iob_data,
             //cpx request from iob
@@ -294,7 +294,7 @@ begin
 
 
         );
-
+*/
         // a little error check
         if (iob_buffer_val && (out_buffer_val[out_write_index] | out_buffer_val[out_write_index + 1] == 1'b1))
         begin

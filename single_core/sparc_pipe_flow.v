@@ -109,7 +109,7 @@ reg  spc_pipe_on;
 
 initial
 begin
-     $monInit();
+//     $monInit();
      pc_f = "     ";
      inst_f = "   - ";
      inst_s = "   - ";

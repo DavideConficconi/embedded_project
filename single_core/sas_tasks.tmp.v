@@ -755,8 +755,8 @@ initial begin
 
     // sas_def = 1; //ttttttt
     if(sas_def)begin
-        dummy = $bw_decoder(1);//create handle for this core.
-        $bw_force_by_name(1);
+//        dummy = $bw_decoder(1);//create handle for this core.
+//        $bw_force_by_name(1);
     end
     if($test$plusargs("debug_sas")) debug_sas =1;
     else debug_sas = 0;
@@ -779,7 +779,7 @@ task mra_val;
                10'd0 : begin
     `ifndef PITON_PROTO
     `ifdef FPGA_SYN_16x160
-                    $bw_force_by_name(2, idx, `TLUPATH0.mra.arr0.inq_ary0, tmp[1:0]);
+/*                    $bw_force_by_name(2, idx, `TLUPATH0.mra.arr0.inq_ary0, tmp[1:0]);
                     $bw_force_by_name(2, idx, `TLUPATH0.mra.arr0.inq_ary1, tmp[3:2]);
                     $bw_force_by_name(2, idx, `TLUPATH0.mra.arr0.inq_ary2, tmp[5:4]);
                     $bw_force_by_name(2, idx, `TLUPATH0.mra.arr0.inq_ary3, tmp[7:6]);
@@ -878,12 +878,12 @@ task mra_val;
                     $bw_force_by_name(2, idx, `TLUPATH0.mra.arr19.inq_ary1, tmp[3:2]);
                     $bw_force_by_name(2, idx, `TLUPATH0.mra.arr19.inq_ary2, tmp[5:4]);
                     $bw_force_by_name(2, idx, `TLUPATH0.mra.arr19.inq_ary3, tmp[7:6]);
-                    mra_wdata[159:152] = {tmp[7],tmp[5],tmp[3],tmp[1],tmp[6],tmp[4],tmp[2],tmp[0]};
+*/                    mra_wdata[159:152] = {tmp[7],tmp[5],tmp[3],tmp[1],tmp[6],tmp[4],tmp[2],tmp[0]};
         `else
-            $bw_force_by_name(2, idx, `TLUPATH0.mra.inq_ary, mra_wdata);
+//            $bw_force_by_name(2, idx, `TLUPATH0.mra.inq_ary, mra_wdata);
         `endif
     `else
-    $bw_force_by_name(2, idx, `TLUPATH0.mra.inq_ary, mra_wdata);
+//    $bw_force_by_name(2, idx, `TLUPATH0.mra.inq_ary, mra_wdata);
     `endif // PITON_PROTO
                 end
     `endif
@@ -894,7 +894,7 @@ task mra_val;
     end
 endtask // mra_val
 //do reset tlb valid bit.
-task tlb_reset;
+/*task tlb_reset;
     input [9:0] core;
     input [5:0] idx;
     input [1:0] which_tlb;
@@ -903,7 +903,7 @@ task tlb_reset;
         case(core)
         
     `ifdef RTL_SPARC0
-                10'd0 : if(which_tlb == 1)$bw_force_by_name(3, `DTLBPATH0.tlb_entry_vld, idx);
+                10'd0 : if(which_tlb == 1) $bw_force_by_name(3, `DTLBPATH0.tlb_entry_vld, idx);
                     else $bw_force_by_name(3, `ITLBPATH0.tlb_entry_vld, idx);
     `endif
 
@@ -912,7 +912,7 @@ task tlb_reset;
         endcase // case(core)
     end
 endtask // tlb_reset
-reg timestamp, timest;
+*/reg timestamp, timest;
 reg [63:0] time_stamp;
 reg         pli_flag;
 
@@ -958,10 +958,10 @@ always @(posedge clk)begin
                         `FAKE_IOB.cpx_data[17:16] == 1)begin
                     expected_warm = 0;
                     //reset list and buffer
-                    $bw_reset_buf();//always send C0T0
+//                    $bw_reset_buf();//always send C0T0
                     //dummy = $bw_list(`TOP_MOD.list_handle, `RESET_COMMAND);//clean instruction and register buffer
-                    dummy = $bw_decoder(`RESET_COMMAND, `TOP_MOD.list_handle);
-                    dummy = $bw_sas_send(`PLI_FORCE_TRAP_TYPE, 0, 8'b0000_0001);//trap type one
+//                    dummy = $bw_decoder(`RESET_COMMAND, `TOP_MOD.list_handle);
+//                    dummy = $bw_sas_send(`PLI_FORCE_TRAP_TYPE, 0, 8'b0000_0001);//trap type one
 
                     
     `ifdef RTL_SPARC0
@@ -1192,9 +1192,9 @@ always @(posedge clk)begin
         end
         if(less)begin
             if(which == `INTR_RECEIVE || which == `HINTP_SAS)begin
-                dummy = $bw_list(`TOP_MOD.list_handle, 2,sas_which, sas_spc,  sas_thread,
+/*                dummy = $bw_list(`TOP_MOD.list_handle, 2,sas_which, sas_spc,  sas_thread,
                                  sas_win, sas_addr,      sas_reg,   sas_cond, sas_timer);
-                sas_time = sas_timer;
+*/                sas_time = sas_timer;
 
                 if (debug_sas)
                     $display("%0t BW_LIST: Pop data type(%d) core(%d) thread(%d) win(%d) reg_num(%d) val(%0x)",$time, sas_which, sas_spc, sas_thread, sas_win, sas_addr, sas_reg);
@@ -1232,10 +1232,10 @@ end
 //compare instruction
 task check_inst;
     begin
-        dummy = $bw_sas_recv(sas_val, inst_thread, sas_win, sas_addr, 200, ready,
+/*        dummy = $bw_sas_recv(sas_val, inst_thread, sas_win, sas_addr, 200, ready,
                              sas_timer, next_which, mul, mulv, mulr, mulw);//got phyical address
-        if(sas_def && dummy)begin
-            dummy = $bw_list(`TOP_MOD.list_handle, 21, sas_reg,  sas_timer, inst_cond);
+*/        if(sas_def /*&& dummy*/)begin
+//            dummy = $bw_list(`TOP_MOD.list_handle, 21, sas_reg,  sas_timer, inst_cond);
             sas_time = sas_timer;
             //      if(mul_vld[inst_thread])mul_vld[inst_thread]  = 0;
             if(inst_cond)begin
@@ -1267,12 +1267,12 @@ task rdAndcmp;
     begin
         if(sas_def)begin
             recv_status = 1;
-            while($bw_list(`TOP_MOD.list_handle, 1,  next_thread,
-                           sas_win, sas_addr, which, ready, rtl_val, sas_timer) && recv_status && (`TOP_MOD.fail_flag == 0))begin
+            while(1/*$bw_list(`TOP_MOD.list_handle, 1,  next_thread,
+                           sas_win, sas_addr, which, ready, rtl_val, sas_timer) && recv_status && (`TOP_MOD.fail_flag == 0)*/)begin
                 sas_time = sas_timer;
                 if(which == `HINTP_SAS && ready)begin
-                    dummy = $bw_list(`TOP_MOD.list_handle, 2, sas_which, sas_spc,  sas_thread,
-                                     sas_win, sas_addr,  sas_reg,   sas_cond, sas_timer);
+ //                   dummy = $bw_list(`TOP_MOD.list_handle, 2, sas_which, sas_spc,  sas_thread,
+//                                     sas_win, sas_addr,  sas_reg,   sas_cond, sas_timer);
                     if (debug_sas)
                         $display("%0t BW_LIST: Pop data type(%d) core(%d) thread(%d) win(%d) reg_num(%d) val(%0x)",$time, sas_which, sas_spc, sas_thread, sas_win, sas_addr, sas_reg);
                     sas_time = sas_timer;
@@ -1294,8 +1294,8 @@ task rdAndcmp;
                             // ready < 2                        &&
                             smul_reg[next_thread] == sas_addr)begin
                         sas_val = smul_val[next_thread];
-                        dummy = $bw_list(`TOP_MOD.list_handle, 2, sas_which, sas_spc,  sas_thread,
-                                         sas_win, sas_addr,  sas_reg,   sas_cond, sas_timer);
+//                        dummy = $bw_list(`TOP_MOD.list_handle, 2, sas_which, sas_spc,  sas_thread,
+//                                         sas_win, sas_addr,  sas_reg,   sas_cond, sas_timer);
                         if (debug_sas)
                             $display("%0t BW_LIST: Pop data type(%d) core(%d) thread(%d) win(%d) reg_num(%d) val(%0x)",$time, sas_which, sas_spc, sas_thread, sas_win, sas_addr, sas_reg);
                         sas_time = sas_timer;
@@ -1304,12 +1304,12 @@ task rdAndcmp;
                                          sas_val, sas_val, 0, 0, 0, 0, sas_cond);
                         smul_vld[next_thread] = 0;
                         recv_status           = 0;
-                        dummy = $bw_sas_recv(sas_val, next_thread, sas_win, sas_addr, which, ready, sas_timer, next_which,
-                                             mul, mulv, mulr, mulw);
+ //                       dummy = $bw_sas_recv(sas_val, next_thread, sas_win, sas_addr, which, ready, sas_timer, next_which,
+ //                                            mul, mulv, mulr, mulw);
                     end
                     else begin
                         if(which == `REG_WRITE_BACK)smul_vld[next_thread] = 0;
-                        case($bw_sas_recv(sas_val, next_thread, sas_win, sas_addr, which, ready, sas_timer, next_which,
+/*                        case($bw_sas_recv(sas_val, next_thread, sas_win, sas_addr, which, ready, sas_timer, next_which,
                                               mul, mulv, mulr, mulw))
                             0 : begin
                                 recv_status                   = 0;
@@ -1327,8 +1327,8 @@ task rdAndcmp;
                                     sas_cond  = drop_cond[next_thread];
 
                                     if(sas_val != sas_reg)begin
-                                        dummy = $bw_list(`TOP_MOD.list_handle, 2, sas_which, sas_spc,  sas_thread,
-                                                         sas_win, sas_addr,       sas_reg,   sas_cond, sas_timer);
+//                                        dummy = $bw_list(`TOP_MOD.list_handle, 2, sas_which, sas_spc,  sas_thread,
+//                                                         sas_win, sas_addr,       sas_reg,   sas_cond, sas_timer);
                                         if (debug_sas)
                                             $display("%0t BW_LIST: Pop data type(%d) core(%d) thread(%d) win(%d) reg_num(%d) val(%0x)",$time, sas_which, sas_spc, sas_thread, sas_win, sas_addr, sas_reg);
                                         sas_time = sas_timer;
@@ -1350,8 +1350,8 @@ task rdAndcmp;
                                         $display("Info:Mulcc data thread(%d) reg(%d) val(%x)", next_thread, sas_addr, sas_val);
                                     end
                                     else begin
-                                        dummy = $bw_list(`TOP_MOD.list_handle, 2,sas_which, sas_spc,  sas_thread,
-                                                         sas_win, sas_addr,      sas_reg,   sas_cond, sas_timer);
+ //                                       dummy = $bw_list(`TOP_MOD.list_handle, 2,sas_which, sas_spc,  sas_thread,
+//                                                         sas_win, sas_addr,      sas_reg,   sas_cond, sas_timer);
                                         if (debug_sas)
                                             $display("%0t BW_LIST: Pop data type(%d) core(%d) thread(%d) window(%d) reg(%d) val(%0x)\n", $time, sas_which, sas_spc, sas_thread, sas_win, sas_addr, sas_reg);
                                         sas_time = sas_timer;
@@ -1362,9 +1362,9 @@ task rdAndcmp;
                                         if(ready >= 2 || (which == `INTR_RECEIVE))begin//dummy compare
                                             if(sas_reg != sas_val)begin
                                                 if(which == `INTR_RECEIVE)
-                                                    dummy =  $bw_sas_recv(sas_val, next_thread, sas_win, sas_addr, 254, 9, sas_timer);
+ //                                                   dummy =  $bw_sas_recv(sas_val, next_thread, sas_win, sas_addr, 254, 9, sas_timer);
                                                 else
-                                                    dummy =  $bw_sas_recv(sas_val, next_thread, sas_win, sas_addr, 254, ready, sas_timer);
+ //                                                   dummy =  $bw_sas_recv(sas_val, next_thread, sas_win, sas_addr, 254, ready, sas_timer);
                                             end
                                             else if(which == `INTR_RECEIVE && ready == 1)begin
                                                 $display("(%0t):drop intr_receive = %x thread(%d)", sas_time, sas_val, next_thread);
@@ -1401,8 +1401,8 @@ task rdAndcmp;
                                 `MONITOR_PATH.fail("missed_trigger");
                             end
                             3 : begin
-                                dummy = $bw_list(`TOP_MOD.list_handle, 2,         sas_which, sas_spc, sas_thread,
-                                                 sas_win, sas_addr,     sas_reg,  sas_cond, sas_timer);
+//                                dummy = $bw_list(`TOP_MOD.list_handle, 2,         sas_which, sas_spc, sas_thread,
+//                                                 sas_win, sas_addr,     sas_reg,  sas_cond, sas_timer);
                                 if (debug_sas)
                                     $display("%0t BW_LIST: Pop data type(%d) core(%d) thread(%d) window(%d) reg(%d) val(%0x)\n", $time, sas_which, sas_spc, sas_thread, sas_win, sas_addr, sas_reg);
                                 sas_time = sas_timer;
@@ -1428,7 +1428,7 @@ task rdAndcmp;
                                 end // if (ready != 2)
                                 else begin //drop data.
                                     $display("Info: pop thread(%x) addr(%d) val(%x)", next_thread, sas_addr, sas_reg);
-                                    dummy =  $bw_sas_recv(sas_val, next_thread, sas_win, sas_addr, 254, 10, sas_which, sas_reg);
+//                                    dummy =  $bw_sas_recv(sas_val, next_thread, sas_win, sas_addr, 254, 10, sas_which, sas_reg);
                                 end // else: !if(!(ready >= 2))
                                 recv_status = 0;
                             end
@@ -1456,7 +1456,7 @@ task rdAndcmp;
                                 recv_status = 0;
                             end
                             7 : begin//shift by one
-                                dummy       = $bw_list(`TOP_MOD.list_handle, 5);
+//                                dummy       = $bw_list(`TOP_MOD.list_handle, 5);
                                 recv_status = 0;
                             end
                             8: begin
@@ -1467,9 +1467,9 @@ task rdAndcmp;
                             end
                             9 : begin//search for the potential matching value.
                                 if($bw_list(`TOP_MOD.list_handle, 6, next_which))begin
-                                    dummy =  $bw_sas_recv(sas_val, next_thread, sas_win, sas_addr, 254, 11, sas_which);
+ //                                   dummy =  $bw_sas_recv(sas_val, next_thread, sas_win, sas_addr, 254, 11, sas_which);
                                     if(!(ready >= 2))begin
-                                        dummy = $bw_list(`TOP_MOD.list_handle, 2, sas_which, sas_spc, sas_thread,
+//                                        dummy = $bw_list(`TOP_MOD.list_handle, 2, sas_which, sas_spc, sas_thread,
                                                          sas_win, sas_addr, sas_reg,  sas_cond, sas_timer);
                                         if (debug_sas)
                                             $display("%0t BW_LIST: Pop data type(%d) core(%d) thread(%d) window(%d) reg(%d) val(%0x)\n", $time, sas_which, sas_spc, sas_thread, sas_win, sas_addr, sas_reg);
@@ -1496,23 +1496,23 @@ task rdAndcmp;
                                 end // if ($bw_list(`TOP_MOD.list_handle, 6, next_which))
                                 else begin
                                     recv_status = 0;
-                                    dummy =  $bw_sas_recv(sas_val, next_thread, sas_win, sas_addr, 254, 12, next_which);
+//                                    dummy =  $bw_sas_recv(sas_val, next_thread, sas_win, sas_addr, 254, 12, next_which);
                                 end // else: !if($bw_list(`TOP_MOD.list_handle, 6, next_which))
 
                             end // case: 9
                             10 : //hit good trap
                             begin
-                                dummy = $bw_list(`TOP_MOD.list_handle, 2,sas_which, sas_spc,  sas_thread,
+//                                dummy = $bw_list(`TOP_MOD.list_handle, 2,sas_which, sas_spc,  sas_thread,
                                                  sas_win, sas_addr,      sas_reg,   sas_cond, sas_timer);
-                                if (debug_sas)
+//                                if (debug_sas)
                                     $display("%0t BW_LIST: Pop data type(%d) core(%d) thread(%d) window(%d) reg(%d) val(%0x)\n", $time, sas_which, sas_spc, sas_thread, sas_win, sas_addr, sas_reg);
                                 sas_time = sas_timer;
                                 recv_status = 0;
                             end
                         endcase // case($bw_sas_recv(sas_val, next_thread, sas_win, sas_addr))
-                    end // else: !if(which == `REG_WRITE_BACK &&...
+*/                    end // else: !if(which == `REG_WRITE_BACK &&...
 
-                    if((which == `PC) && $bw_list(`TOP_MOD.list_handle, 22, inst_thread))check_inst;
+                    if((which == `PC) /*&& $bw_list(`TOP_MOD.list_handle, 22, inst_thread)*/)check_inst;
 
                 end
             end // if (sas_def)
@@ -1592,10 +1592,10 @@ task send_cmd;
 
     begin //send rtl cycle before sending any request to simics.
         if(sas_int && `SAS_INTER.counter)begin
-            sent = $bw_sas_send(`PLI_RTL_CYCLE, `SAS_INTER.counter);
+ //           sent = $bw_sas_send(`PLI_RTL_CYCLE, `SAS_INTER.counter);
             `SAS_INTER.counter = 0;
         end
-        case(cmd)
+/*        case(cmd)
             `PLI_QUIT             : sent = $bw_sas_send(`PLI_QUIT);
             `PLI_SSTEP            : sent = $bw_sas_send(`PLI_SSTEP, thr);
             `PLI_READ_TH_REG      : sent = $bw_sas_send(`PLI_READ_TH_REG, thr, win, addr);
@@ -1636,7 +1636,7 @@ task send_cmd;
                         data[63:56], data[55:48],  data[47:40], data[39:32],
                         data[31:24], data[23:16],  data[15:8],  data[7:0]);
         endcase // case(cmd)
-    end
+*/    end
 endtask // send_cmd
 task register_cmp;
     input [7:0]  type;
@@ -1694,11 +1694,11 @@ task register_cmp;
                              sas_time, spc,  thread, window, rs1, val1, rs2, val2, sym, rtl_reg_addr[2:0], rtl_reg_val);
                 end
                 else begin
-                    dummy =  $bw_sas_recv(sas_val, next_thread, sas_win, sas_addr, 254, 77, sas_which, sas_temp);
+//                    dummy =  $bw_sas_recv(sas_val, next_thread, sas_win, sas_addr, 254, 77, sas_which, sas_temp);
                     //  $display("MISM %x %x %x\n", dummy, sas_temp, sas_reg_val);
 
-                    if(dummy && (sas_temp == sas_reg_val) )begin
-                        dummy  = $bw_list(`TOP_MOD.list_handle, 7);//push back
+                    if(/*dummy &&*/ (sas_temp == sas_reg_val) )begin
+//                        dummy  = $bw_list(`TOP_MOD.list_handle, 7);//push back
                     end
                     else begin
                         $display("%0t:reg-MISMATCH -> spc(%1d) thread(%d) window(%d) rs1(%x)->%x rs2(%x)->%x reg#(%s%0x) rtl_reg_val = %x, sas_reg_val =%x",
@@ -1790,7 +1790,7 @@ task register_cmp;
 
                     end
                     else begin
-                        dummy =  $bw_sas_recv(ccr_req, thread, sas_win, sas_addr, 254, 35, sas_timer, sas_sps_val[7:0]);
+//                        dummy =  $bw_sas_recv(ccr_req, thread, sas_win, sas_addr, 254, 35, sas_timer, sas_sps_val[7:0]);
                         //$display("MISMATC CCR", ccr_req);
 
                         if(rtl_reg_val[7:0] == ccr_req[7:0])begin
@@ -1811,7 +1811,7 @@ task register_cmp;
 
                 end
                 else begin
-                    dummy =  $bw_sas_recv(ccr_req, thread, sas_win, sas_addr, 254, 35, sas_timer, sas_sps_val[7:0]);
+//                    dummy =  $bw_sas_recv(ccr_req, thread, sas_win, sas_addr, 254, 35, sas_timer, sas_sps_val[7:0]);
                     //$display("MISMATC CCR", ccr_req);
                     if(rtl_reg_val[7:0] == ccr_req[7:0])begin
                         $display("%0t:ccr_reg-MATCH -> spc(%1d) thread(%d) window(%d) val = %x",

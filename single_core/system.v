@@ -81,7 +81,7 @@
 //                              use a DDR2/3 memory controller.  If
 //                              this is not set, a default "fake"
 //                              simulated DRAM is used.
-
+`include "config.v"
 module system(
 `ifndef PITON_FPGA_SYNTH
     // I/O settings

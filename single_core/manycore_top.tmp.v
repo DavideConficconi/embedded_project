@@ -28,7 +28,7 @@
 `include "ifu.tmp.h"
 `include "define.vh"
 `include "piton_system.vh"
-
+`include "config.v"
 
 
 
@@ -105,7 +105,6 @@ reg [3:0]                       stub_pass;
 ////////////////////
 // Simulated Clocks
 ////////////////////
-
 `ifndef NO_SIM_PLL
 always #5000 core_ref_clk = ~core_ref_clk;                      // 100MHz
 `else
@@ -176,6 +175,7 @@ begin
     clk_en = 1'b0;
     if ($test$plusargs("pll_en"))
     begin
+	 $display(" Deebug: pll en");
         // PLL is disabled by default
         pll_bypass = 1'b0; // trin: pll_bypass is a switch in the pll; not reliable
         clk_mux_sel[1:0] = 2'b10; // selecting pll
@@ -203,12 +203,13 @@ begin
     // Init JBUS model plus some ORAM stuff
     if ($test$plusargs("oram"))
     begin
-        $init_jbus_model("mem.image", 1);
-        force chip.ctap_oram_clk_en = 1'b1;
+	 $display(" Deebug: oram defined");
+//        $init_jbus_model("mem.image", 1);
+//        force chip.ctap_oram_clk_en = 1'b1;
     end
     else
     begin
-        $init_jbus_model("mem.image", 0);
+//        $init_jbus_model("mem.image", 0);
     end 
 
 
@@ -513,7 +514,7 @@ iosplitter_axi_lite_updated iosplitter_axi_lite(
     //  and it is randomized. For some reason if we left it as X's some tests will fail
     
 initial begin
-    $slam_random(`SPARC_REG0.bw_r_irf_core.register01.bw_r_irf_register.window, 8, 0);
+    /*$slam_random(`SPARC_REG0.bw_r_irf_core.register01.bw_r_irf_register.window, 8, 0);
     $slam_random(`SPARC_REG0.bw_r_irf_core.register02.bw_r_irf_register.window, 8, 0);
     $slam_random(`SPARC_REG0.bw_r_irf_core.register03.bw_r_irf_register.window, 8, 0);
     $slam_random(`SPARC_REG0.bw_r_irf_core.register04.bw_r_irf_register.window, 8, 0);
@@ -544,7 +545,7 @@ initial begin
     $slam_random(`SPARC_REG0.bw_r_irf_core.register29.bw_r_irf_register.window, 8, 0);
     $slam_random(`SPARC_REG0.bw_r_irf_core.register30.bw_r_irf_register.window, 8, 0);
     $slam_random(`SPARC_REG0.bw_r_irf_core.register31.bw_r_irf_register.window, 8, 0);
-end
+*/end
 
 
 
@@ -622,8 +623,8 @@ end
         //list_handle = $bw_list(list_handle, 0);chin's change
          //if not use sas, list should not be called
         if($test$plusargs("use_sas_tasks"))begin
-            list_handle = $bw_list(list_handle, 0);
-                $bw_socket_init();
+//            list_handle = $bw_list(list_handle, 0);
+//                $bw_socket_init();
         end
     end
 

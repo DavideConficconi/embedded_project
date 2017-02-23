@@ -49,6 +49,7 @@ module monitor(/*AUTOARG*/
     end // initial begin
 
     always @(posedge clk)begin
+		  $display(" Deebug: I'm inside monitor!!");
         cycle = cycle + 1;
 
         if(cycle == max_cycle) begin
